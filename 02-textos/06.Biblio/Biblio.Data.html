@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Bibliografía</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+</head>
+
+<body>
+	<h1>Novela cyberpunk</h1>
+    <p>Ejemplo del uso de los atributos "a medidda" data- para definir las mismas clases que en el ejemplo anterior se habían definido con "class"</p>
+	<hr>
+    <img src="image/img_500.jpg">
+
+	<!-- Para cada elemento de la bibliografía usaremos el siguiente formato
+		<p class="Biblio">
+			<span class="Titulo">..</span>
+			(<span class="Tít_Original">..</span>,
+		    <span>..</span>).
+		    <span class="Serie">..</span>.
+			<span class="Autor">..</span>.
+			<span class="Editorial">..</span>,
+			<span class="Fecha_Edicion">..</span>.</p>
+	-->		
+	<div class="Biblio"> 
+		<p class="Biblio" title="Neuromante">
+		    <cite data-Titulo="Neuromante" data-TitOriginal="Neuromancer" data-FechaOriginal="1984" data-Serie="Trilogia del Sprawl [1]" data-Autor="William Gibson" data-Editorial="Minotauro" 
+			data-FechaEdicion=" 1989">Neuromante</cite>			
+		    (<cite data-TitOriginal="Neuromancer">Neuromancer</cite>,
+		    <time data-FechaOriginal="19">1984</time>).
+		    <span data-Serie="">Trilogia del Sprawl [1]</span>.
+			<strong data-Autor="">William Gibson</strong>.
+			<span data-Editorial="">Minotauro</span>,
+			<time data-FechaEdicion="">1989</time>.</p>
+		<p class="Biblio" title="Islas en La Red">
+			<cite class="Titulo">Islas en La Red</cite>
+			(<cite class="Tít_Original">Islands in the Net</cite>,
+		    <time class="Fecha_Original">1988</time>).
+			<strong class="Autor">Bruce Sterling</strong>.
+			<span class="Editorial">Destino</span>,
+			<time class="Fecha_Edicion">1990</time>.</p>
+		<p class="Biblio" title="Snow Crash">
+			<cite class="Titulo">Snow Crash</cite>
+			(<cite class="Tít_Original">Snow Crash</cite>,
+		    <time class="Fecha_Original">1992</time>).
+			<strong class="Autor">Neal Stephenson</strong>.
+			<span class="Editorial">Gigamesh</span>,
+			<time class="Fecha_Edicion">2000</time>.</p>
+		<p class="Biblio" title="El Sueño Del Rey Rojo">
+			<cite class="Titulo">El Sueño Del Rey Rojo</cite>
+			(<cite class="Tít_Original">El Sueño Del Rey Rojo</cite>,
+		    <time class="Fecha_Original">2004</time>).
+			<strong class="Autor">Rodolfo Martínez</strong>.
+			<span class="Editorial">Gigamesh</span>,
+			<time class="Fecha_Edicion">2004</time>.</p>
+		<p class="Biblio" title="La Chica Mecánica">
+			<cite class="Titulo">La Chica Mecánica</cite>
+			(<cite class="Tít_Original">The Windup Girl</cite>,
+		    <time class="Fecha_Original">2009</time>).
+			<strong class="Autor">Paolo Bacigalupi</strong>.
+			<span class="Editorial">Plaza y Janés</span>,
+			<time class="Fecha_Edicion">2011</time>.</p>
+	</div>
+	<hr>
+	<div id="hcard-Aleajndro-L.-Cerezo" class="vcard">
+        <span class="fn n">
+    		<span class="given-name">Aleajndro</span>
+    		<span class="additional-name">L.</span>
+    		<span class="family-name">Cerezo</span>
+      	</span>
+      	<div class="org">Microforum</div>
+      	<a class="email" href="mailto:alcerezo@microforum.es">alcerezo@microforum.es</a>
+      	<div class="adr">
+	  		<div class="street-address">P. Reina Victoria</div>
+	  		<span class="region">Madrid</span> - 
+			<span class="country-name">Spain</span>
+	    </div>
+	</div>
+</body>
+</html>

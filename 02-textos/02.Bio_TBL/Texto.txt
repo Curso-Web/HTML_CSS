@@ -1,0 +1,17 @@
+[Titulo]Sir Timothy "Tim" John Berners-Lee.
+[Subtitulo]El padre de la Web 
+[Foto]
+
+[Parrafo]TBL es un científico de la computación británico, nacido en Londres, Reino Unido, el 8 de junio de 1955.
+
+[Parrafo]Es conocido como el padre de la Web, desde que estableció la primera comunicación entre un cliente y un servidor usando el protocolo HTTP en noviembre de 1989, mientras trabajaba en el [Enlace]CERN [fin]
+
+[Parrafo]Ante la necesidad de distribuir e intercambiar información acerca de sus investigaciones de una manera más efectiva, Berners-Lee y su grupo desarrollaron las ideas fundamentales que estructuran la web:[salto de línea]
+
+- el lenguaje de etiquetas de hipertexto o HTML (HyperText Markup Language)[salto de línea]
+- el protocolo HTTP (HyperText Transfer Protocol)[salto de línea]
+- el sistema de localización de objetos en la web URL (Uniform Resource Locator)[salto de línea].
+
+[Parrafo]En octubre de 1994 asumió la dirección del Consorcio de la World Wide Web [Enlace](W3C)[fin] con sede en el MIT, para supervisar y estandarizar el desarrollo de las tecnologías sobre las que se fundamenta la Web y que permiten el funcionamiento de Internet.
+
+[Parrafo]Más información en la Wikipedia [Enlace]

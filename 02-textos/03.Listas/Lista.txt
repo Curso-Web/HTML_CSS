@@ -1,0 +1,30 @@
+Consumo diario
+	- cereales
+		- panes 
+		- arroz
+		- pastas
+	- frutas y verduras
+		- frutas
+		- verduras
+	- legumbres y tubérculos, 
+		- legumbres
+		- tubérculos
+		- otras raices
+Consumo habitual
+	- proteinas animales
+		- carnes rojas,
+		- aves y otras carnes blancas
+		- pescados
+		- mariscos
+	- huevos
+	- lacteos 
+		- leche 
+		- yogur
+		- queso
+Consumo moderado
+	- grasas
+		- aceites
+		- otras grasas
+	- dulces
+		- azúcares
+		- confituras y almíbares
