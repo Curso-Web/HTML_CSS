@@ -1,0 +1,10 @@
+body>ol {list-style-type: decimal-leading-zero;
+         width: 30%;
+}
+ol>li>ol {list-style-type: upper-alpha;}
+
+ul {list-style-image: url("../image/bullet_10.jpg");}
+
+    ul li:nth-child(2n) {
+        background-color: papayawhip;
+    }

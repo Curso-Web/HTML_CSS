@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="fantástico, género literario">
+	<meta name="author" content="Alejandro" >
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio" >
+	<meta charset="UTF-8">
+	<title>Lo fantástico</title>
+	<link rel="shortcut icon" href="fav_icon.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto|Chewy' rel='stylesheet' type='text/css'>
+	<style>
+        @font-face {
+            font-family: 'Bavand';
+            src: url('fonts/Bavand-Regular.ttf') format('truetype');
+        }
+        h1 {
+            font-family: "Bavand",fantasy;
+            font-size: 3em;
+            color: red;
+            text-align: center;
+        }
+		span.Autor{
+			font-weight:bold;
+			text-decoration:underline;
+			color:blue;
+		}
+		p{
+			font-family:"Roboto",sans-serif;
+			font-size:1em;	
+		}
+        p#p1::first-letter {
+            font-family: "Chewy",fantasy;
+            font-size: 3em;
+        }
+        p#p1::first-line {
+            line-height: 300%;
+            font-size: 1.5em;
+        }
+        p#p2 { /*blockquote*/
+            text-align: right;
+            }
+        blockquote, q {
+            quotes: "«" "»";
+        }
+        blockquote:before {
+            content: open-quote;
+        }        
+        blockquote:after {
+            content: close-quote;
+        }
+        q {
+            font-style: italic;
+            color: green;
+        }
+		footer p, address{
+			line-height: 5%;
+			text-align: center;
+		}		
+	</style>
+</head>
+
+<body>
+    <header>
+        <h1>Lo fantástico</h1>
+    </header>
+	<article>
+        <p id="p1">Lo <strong>fantástico</strong> es un <strong>género</strong> de la literatura que ha suscitado una gran cantidad de estudios y reflexiones. Por ejemplo, los teóricos franceses <span class="Autor">Louis Vax</span> (<time>1924</time>) y <span class="Autor">Roger Caillois</span> (<time>1913</time>-<time>1978</time>) han escrito sendos ensayos en los que definen las causas de lo fantástico en un relato. Para ambos, la fantasía implica una transgresión del mundo real en el cual habita el personaje, un mundo real con el cual está familiarizado el lector. Así, en su libro, <span class="Autor">Louis Vax</span> argumenta que <q cite="L'art et la littérature fantastiques (1960)" title="L'art et la littérature fantastiques (1960)">la narración fantástica se deleita en presentarnos a hombres como nosotros situados súbitamente en presencia de lo inexplicable, pero dentro de nuestro mundo real</q>. <span class="Autor">Roger Caillois</span> por su parte, lo define como <q cite="Au cœur du fantastique (1965)" title="Au cœur du fantastique (1965)">un escándalo, una rajadura, una irrupción insólita, casi insoportable en el mundo real</q>.</p>
+
+        <blockquote id="p2" title="Blog El Jinete Insomne" cite="http://eljineteinsomne2.blogspot.com.es/2009/06/del-cuento-fantastico-y-sus-precursores_02.html">
+            El género literario de lo fantástico muchas veces es confundido con otros géneros como la ciencia ficción o el terror. De hecho, la palabra "fantástico" ha sido utilizada en contextos tan variados, que ha perdido gran parte de su significado intrínseco. Las diversas tendencias críticas que han examinado este fenómeno literario, no logran ponerse de acuerdo y sus análisis muchas veces resultan contradictorios. Tanto para el ensayista francés <span class="Autor">Marcel Schneider</span> (1913), autor de <cite lang="fr">La littérature fantastique en France</cite> (<cite>La literatura fantástica en Francia</cite>), como para el profesor de Lengua Inglesa en la Universidad de Michigan <span class="Autor">Eric S. Rabkin</span> (1946), autor de <cite lang="en">The fantastic in literature</cite> (<cite>Lo fantástico en la literatura</cite>), todo tipo de <strong>ficción no realista</strong> es fantástico.
+        </blockquote>
+
+        <p id="p3">Como es evidente, la literatura fantástica se desarrolló principalmente en el campo de la narrativa y, con especial vitalidad, en el ámbito del <strong>cuento</strong> que permite un tratamiento más escurri­dizo y alusivo de las situaciones imaginarias. Es así que, culmina <span class="Autor">Jaime Rest</span>, <q cite="Conceptos de literatura moderna (1979)" title="Conceptos de literatura moderna (1979)">la <strong>variedad de especies</strong> que admite esta producción es múltiple: el horror, lo sobrenatural, lo mons­truoso, lo indeterminado, la especulación metafí­sica, la conciencia de la culpa o del pecado e in­numerables experiencias humanas de índole fron­teriza y penumbrosa han logrado canalizarse en el área fantástica</q>.</p>
+    </article>
+    <hr />
+    <footer>
+        <p>Textos recogidos de direrentes fuentes en Internet que recogen citas diversas de las fuentes citadas</p>
+        <address>Alejandro Cerezo alce65@hotmail.es</address>
+    </footer>
+</body>
+</html>

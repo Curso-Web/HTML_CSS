@@ -1,0 +1,26 @@
+h1{
+	font-family:"Bavand",fantasy;
+	font-size:46px;
+	color:red;
+}
+span.Autor{
+	font-weight:bold;
+	text-decoration:underline;
+	color:blue;
+}
+p{
+	font-family:"Bodoni",sans-serif;
+	font-size:18px;	
+}
+p#p2{
+	font-family:"Times New Roman",serif;
+	font-size:14px;	
+}
+q{
+	font-style:italic;
+	color:green;
+}
+address, p.Fuentes{
+	font-size:12px;
+}
+

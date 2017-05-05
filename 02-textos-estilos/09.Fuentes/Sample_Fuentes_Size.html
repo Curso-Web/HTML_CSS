@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejermplos de HTML5: tamaño de las fuentes">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Tamaño de fuentes</title>
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		h1{
+			font-family:"Bavand",fantasy;
+			font-size:2em;
+			color:red;
+		}
+
+		p {font-size:1em;}
+		p:nth-child(2) {font-size:16px;
+							color:red;}
+		p:nth-child(3) {font-size:100%;
+							color:brown;}
+
+		div {width: 50%;
+			border: 1px solid black;
+			font-size:0.8em;}
+		div div {width: 50%;}
+
+
+	</style>
+</head>
+
+<body>
+	<h1>Tamaño de las fuentes</h1>
+	<p>Escrito en el cuerpo con tamaño fijo de 16 px</p>
+	<p>Escrito en el cuerpo con tamaño fijo del 100%</p>
+	<p title="Párrafo 1">Escrrito en el cuerpo con un tamaño de 1em</p>
+	<div>
+		<p title="Párrafo 1">Parrafo de 1 em escrrito en un div que define fuentes de 0.8 em</p>
+		<div>
+			Parrafo de 1 em escrrito en un div dentro del anterior, que nuevamente define fuentes de 0.8 em
+		</div>
+	</div>
+</body>
+</html>

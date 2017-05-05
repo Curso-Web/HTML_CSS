@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<!--Ejemplo de metadatos incorporados mediante MICRODATA,
+	utilizando una serie de categorías definidas por el usuario, 
+	sin seguir ningún estandar-->
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Bibliografía</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+</head>
+
+<body>
+	<header>
+		<h1>Novela cyberpunk</h1>
+	</header>
+
+	<article>
+		<p>Ejemplo del uso de microdata para definir las clases utilizadas en los ejemplos anteriores se habían definido con "class"</p>
+		<hr>
+
+		<img src="image/img_500.jpg">
+
+		
+		<!-- Para cada elemento de la bibliografía usaremos el siguiente formato
+			<p itemscope itemtype="Biblio">
+				<span itemprop="Titulo">..</span>
+				(<span itemprop="Tít_Original">..</span>,
+				<span>..</span>).
+				<span itemprop="Serie">..</span>.
+				<span itemprop="Autor">..</span>.
+				<span itemprop="Editorial">..</span>,
+				<span itemprop="Fecha_Edicion">..</span>.</p>
+		-->		
+		<div class="Biblio"> 
+			<p itemscope itemtype="Biblio" title="Neuromante">
+			<!--El itemtype debería ser una URL-->
+				<cite itemprop="Titulo">Neuromante</cite>
+				(<cite itemprop="Tít_Original">Neuromancer</cite>,
+				<time itemprop="Fecha_Original">1984</time>).
+				<span itemprop="Serie">Trilogia del Sprawl [1]</span>.
+				<strong itemprop="Autor">William Gibson</strong>.
+				<span itemprop="Editorial">Minotauro</span>,
+				<time itemprop="Fecha_Edicion">1989</time>.</p>
+			<p itemscope itemtype="Biblio" title="Islas en La Red">
+				<cite itemprop="Titulo">Islas en La Red</cite>
+				(<cite itemprop="Tít_Original">Islands in the Net</cite>,
+				<time itemprop="Fecha_Original">1988</time>).
+				<strong itemprop="Autor">Bruce Sterling</strong>.
+				<span itemprop="Editorial">Destino</span>,
+				<time itemprop="Fecha_Edicion">1990</time>.</p>
+			<p itemscope itemtype="Biblio" title="Snow Crash">
+				<cite itemprop="Titulo">Snow Crash</cite>
+				(<cite itemprop="Tít_Original">Snow Crash</cite>,
+				<time itemprop="Fecha_Original">1992</time>).
+				<strong itemprop="Autor">Neal Stephenson</strong>.
+				<span itemprop="Editorial">Gigamesh</span>,
+				<time itemprop="Fecha_Edicion">2000</time>.</p>
+			<p itemscope itemtype="Biblio" title="El Sueño Del Rey Rojo">
+				<cite itemprop="Titulo">El Sueño Del Rey Rojo</cite>
+				(<cite itemprop="Tít_Original">El Sueño Del Rey Rojo</cite>,
+				<time itemprop="Fecha_Original">2004</time>).
+				<strong itemprop="Autor">Rodolfo Martínez</strong>.
+				<span itemprop="Editorial">Gigamesh</span>,
+				<time itemprop="Fecha_Edicion">2004</time>.</p>
+			<p itemscope itemtype="Biblio" title="La Chica Mecánica">
+				<cite itemprop="Titulo">La Chica Mecánica</cite>
+				(<cite itemprop="Tít_Original">The Windup Girl</cite>,
+				<time itemprop="Fecha_Original">2009</time>).
+				<strong itemprop="Autor">Paolo Bacigalupi</strong>.
+				<span itemprop="Editorial">Plaza y Janés</span>,
+				<time itemprop="Fecha_Edicion">2011</time>.</p>
+		</div>
+	</article>
+	<footer>
+		<hr>
+		<address id="hcard-Aleajndro-L.-Cerezo" class="vcard">
+			<span class="fn n">
+				<span class="given-name">Aleajndro</span>
+				<span class="additional-name">L.</span>
+				<span class="family-name">Cerezo</span>
+			</span>
+			<div class="org">Boracay</div>
+			<a class="email" href="mailto:alce65@hotmail.es">alce65@hotmail.es</a>
+			<div class="adr">
+				<div class="street-address">Avda. de Bruselas</div>
+				<span class="region">Madrid</span> - 
+				<span class="country-name">Spain</span>
+			</div>
+		</address>		
+	</footer>
+</body>
+</html>

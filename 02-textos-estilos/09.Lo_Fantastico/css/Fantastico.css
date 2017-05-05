@@ -1,0 +1,31 @@
+h1{
+	font-family:"Bavand",fantasy;
+	font-size:46px;
+	color:red;
+}
+span.Autor{
+	font-weight:bold;
+	text-decoration:underline;
+	color:blue;
+}
+p{
+	font-family: "Averia Sans Libre",cursive;
+	font-size:18px;	
+}
+/* p#p2 se puede indicar de las dos siguientes maneras*/
+p:nth-of-type(2){}
+p:nth-child(3) {font-family: "Pacifico", cursive;;
+	font-size:14px;
+}
+q{
+	font-style:italic;
+	color:green;
+	quotes: "«" "»";
+}
+/*q:before, q:after {content: quotes;}*/
+/* p.Fuentes */
+
+address, p:nth-of-type(4) {
+	font-size:12px;
+}
+
