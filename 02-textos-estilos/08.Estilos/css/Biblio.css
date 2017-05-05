@@ -3,8 +3,8 @@ p.Biblio {font-size: 16px; color: blue;}
 
 
 /* Uso de metadatos basados en clases para aplicar formatos*/
-cite.Titulo {font-size: 20px;}
-cite.Tit_Original {font-size: 18px;}
+cite.Titulo {font-size: 20px; color:coral}
+cite.Tit_Original {font-size: 18px; color: forestgreen}
 strong.Autor {font-size: 20px; color: black;}
 span.Serie {color: navy;}
 span.Editorial {color: maroon;}
@@ -14,11 +14,12 @@ time.Fecha_Edicion {}
 		    
 
 /* Uso de metadatos basados MICRODATA para aplicar formatos*/		    
-cite[itemprop=Titulo] {font-size: 20px;}
+cite[itemprop=Titulo] {font-size: 20px;  color:coral}
 cite[itemprop=Tit_Original] {font-size: 18px;}
 strong[itemprop="Autor"] {font-size: 20px; color: black;}
 span[itemprop="Serie"] {color: navy;}
 span[itemprop="Editorial"] {color: maroon;}
+
 
 
 

@@ -13,16 +13,27 @@
 	
 	<style type="text/css">
 
+		div:hover~p {font-size: 80px}
         /*Ejemplos del uso de */
-		p:nth-child(2) {color: maroon;} 
 		p:nth-of-type(2) {color: blue;} 
+		p:nth-child(2) {color: maroon;} 
 	</style>
 </head>
 
 <body>
 	<h1>Ejemplo de pseudoclases jerarquicas</h1>
+
 	<p title="Párrafo 1">Parrafo 1</p>
 	<p title="Párrafo 2">Parrafo 2</p>
 	<p title="Párrafo 3">Parrafo 3</p>
+
+	<div title="Div">Parrafo Interactivo
+		<p title="Párrafo 1 del div">Hola</p>
+		<p title="Párrafo 2 del div">Amigo</p>			
+	</div>	
+
+
+
+
 </body>
 </html>
