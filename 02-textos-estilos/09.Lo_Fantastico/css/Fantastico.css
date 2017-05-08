@@ -23,6 +23,8 @@ q{
 	quotes: "«" "»";
 }
 /*q:before, q:after {content: quotes;}*/
+p:before, p:after {content: quotes;
+					 quotes: "«" "»";}
 /* p.Fuentes */
 
 address, p:nth-of-type(4) {
