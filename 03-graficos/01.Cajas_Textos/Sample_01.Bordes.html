@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Estilos y bordes</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>	
+		h1 {background-color: rgba(255,255,0,0.5)}
+		div{background-color: rgba(255,128,0,0.5);
+		}
+		p.mg {margin: 5% 10% 5% 10%; 
+		padding: 5% 10% 5% 10% ;}
+		
+		p { background-color: rgba(0,0,0,0.3); 
+		border-width: 1px;	    
+		border-style: solid;
+		}
+	</style>
+</head>
+
+<body>
+   <h1>Formato de los bordes</h1>
+	<div>
+		<p title="Nexus 7 Roy Batty - Blade Runner">He visto cosas que vosotros no creeríais: Naves de ataque en llamas más allá de Orión.
+		<br>He visto rayos C brillar en la oscuridad cerca de la Puerta de Tannhäuser.
+		<br> Todos esos momentos se perderán... en el tiempo... como lágrimas en la lluvia.</p>
+	</div>
+
+	<h1 class=mg>Párrafos: margin y padding</h1>
+	<div class=mg>
+	<p>En el primer párrafo no definimos valores.</p>
+	<p class=mg>En el párrafo central definimos margin: 5% 10% 5% 10% / padding: 5% 10% 5% 10%.</p>
+	<p> En el tercer párrafo no definimos valores.</p>
+</div>
+
+</body>

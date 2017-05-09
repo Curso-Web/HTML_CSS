@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>divs absolutos</title>
+<style type="text/css">
+    .caja {
+	    position: absolute;
+	    left: 100px;
+	    top: 100px;
+	    height: 100px;
+	    width: 300px;
+	    border: solid 2px black;
+    }
+    .caja1 {
+        position: absolute;
+        height: 100px;
+        width: 150px;
+        background-color: #FF9;
+        left: 0px;
+        top: 0px;
+    }
+    .caja3 {
+        position: absolute;
+        height: 100px;
+        width: 150px;
+        background-color: #CCF;
+        left: 250px;
+        top: 40px;
+    }
+    .caja2 {
+        position: absolute;
+        height: 100px;
+        width: 150px;
+        left: 150px;
+        top: 0px;
+        background-color: #CFC;
+    }
+    .caja4 {
+        position: fixed;
+        height: 50px;
+        background-color: #FC6;
+        clear: both;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
+</style>
+</head>
+
+<body>
+<div class="caja">
+  <div class="caja1">Caja 1</div>
+  <div class="caja2">Caja 2</div>
+  <div class="caja3">Caja 3</div>
+  <div class="caja4">Caja 4 fixed desde abajo</div>
+</div>
+</body>
+</html>

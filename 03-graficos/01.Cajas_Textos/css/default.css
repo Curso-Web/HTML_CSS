@@ -1,0 +1,13 @@
+hgroup {text-align: center;
+		font-family:"Bavand",fantasy;
+		color:red;}
+/* img {text-align: center} No tendría efecto*/
+
+/* img {margin: 1px auto } no tiene efecto */
+img {margin: 1px 20em }
+p {margin: 1em 10em}
+ul {width: 50%;
+    min-width: 400px;
+    margin: 1em auto;
+	border: solid 2px orange;
+	padding: 1em 2em};

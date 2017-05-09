@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+    <meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejeemplos de HTML5/CSS3: Formas geométricas">
+	<meta name="generator" content="Visual Studio" >
+    <meta charset="UTF-8">
+	<title>Formas con CSS</title>
+	<link rel="shortcut icon" href="fav_icon.png">
+    <style>
+        body{
+            margin: 5% 10% 5% 10%;
+        }
+        #div1 {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+            width: 50px;
+            height: 50px;
+        }
+        #div2 {
+            position: absolute;
+            top: 400px;
+            left: 100px;
+            /*width: 0px;
+            height: 0px;*/
+        }
+
+        div.bordes {
+            border-top: 30px solid green;
+            border-right: 30px solid blue;
+            border-bottom: 30px solid red;
+            border-left: 30px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+	<hgroup>
+        <h1>Formas geométricas</h1>
+        <h2>Dibujando con los bordes</h2>
+    </hgroup>
+	<div id="div1" class="bordes"></div>
+    <div id="div2" class="bordes"></div>
+</body>
+</html>

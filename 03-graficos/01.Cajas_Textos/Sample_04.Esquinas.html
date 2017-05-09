@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Sombras</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style type="text/css">
+		h1 {margin-left:40px;
+			text-shadow: 5px 5px 5px rgb(150,150,150)
+			}
+		div#d1 {position:absolute;
+			top:80px;
+			left:40px;
+			width:200px;
+			height:200px;
+			border: 2px solid black;
+			border-radius: 20px;
+			}
+		div#d2 {position:absolute;
+			top:80px;
+			left:300px;
+		}			
+		p {width:100px;
+			height:100px;
+			border: 2px solid black;}	
+		p#p1 {border-top-left-radius: 80px 50px;}
+		p#p2 {border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;}
+		p#p3 {padding: 0px;
+			border-radius: 100px;}
+	</style>
+</head>
+
+<body>
+	<h1>Esquinas redondeadas</h1>
+	<div id="d1"></div>
+	<div id="d2">
+		<p id="p1"></p>
+		<p id="p2"></p>
+		<p id="p3"></p>
+	</div>
+</body>

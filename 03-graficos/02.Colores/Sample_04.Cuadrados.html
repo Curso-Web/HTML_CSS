@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Opacity</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+				
+		   .caja {
+		      width: 100px;
+				height: 100px;
+            background-color: rgb(255,0,0);
+				margin: 40px;}					
+
+		   .caja {
+		      width: 100px;
+				height: 100px;
+            background-color: rgb(255,0,0);
+				margin: 40px;}			
+				
+		   .caja_2 {
+				top: 40px; 
+				left: 40px ;	      
+		      bottom: 140px;
+				right: 140px;
+            background-color: rgb(255,0,0);
+				margin: 40px;}			
+				
+		   .uno {
+		      width: 100px;
+				height: 100px;
+            background-color: rgb(255,0,0);
+            display: inline-block;
+				margin: 40px;}
+			.dos {
+				width: 100px;
+				height: 100px;
+				background-color: rgb(255,127,0);
+				display: inline-block;
+				margin: 40px;}
+
+		   .tres {
+		      width: 100px;
+				height: 100px;
+            background-color: rgb(255,0,0);
+				margin: 40px;}            
+            /*A diferencia de .uno, no es display inline-block*/
+				
+			.cuatro {
+				width: 100px;
+				height: 100px;
+				background-color: rgb(255,127,0);
+				position: relative;		
+				top: 20px;
+				left: 20px;
+				}
+
+			p {
+				width: 100px;
+				height: 100px;
+				position: relative;
+				top: 20px;
+				left: 20px;
+				background-color: rgb(0,255, 0);}
+			   p.one {background-color: rgb(0,255,0);
+				   	opacity: 0.5;}	
+			   p.two {background-color: rgba(0,255,0,0.5);}
+			   /*Estilos p utilizados para las transparen*/
+			   span {color:red;
+			         background-color: rgb(0,255,0);
+				      width: 100px;
+				      height: 100px;
+			         
+			         }
+		</style>
+	</head>
+	<body>
+	
+		<div class="caja"></div>
+		
+		<div class="uno"></div>
+		<div class="dos"></div>
+		<!--Un cuadrado (dos) al lado de otro (uno)-->
+	
+	
+		<div class="tres">
+			<div class="cuatro"></div>		 
+		 </div>	  
+		<!--Un cuadrado (cuatro) superpuesto con desplazamiento sobre otro (tres)-->
+		
+		<div class="tres">
+			<p class="one"></p>	 
+		 </div>			
+		<!--Un cuadrado (cuatro) superpuesto con desplazamiento sobre otro (tres)
+		    con transparencia-->
+
+		<div class="tres">
+			<p class="two"></p>	 
+		 </div>	
+		<!--Un cuadrado (cuatro) superpuesto con desplazamiento sobre otro (tres)
+		    con transparencia-->
+		    
+		   <div>Hola tamaño de un <span>elemento</span> en línea</div>
+
+	</body>
+</html>

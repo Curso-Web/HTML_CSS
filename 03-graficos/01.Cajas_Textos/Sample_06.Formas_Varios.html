@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+    <meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejeemplos de HTML5/CSS3: Formas geométricas">
+	<meta name="generator" content="Visual Studio" >
+    <meta charset="UTF-8">
+	<title>Formas con CSS</title>
+	<link rel="shortcut icon" href="fav_icon.png">
+    <style>
+        body {
+            margin: 5% 10% 5% 10%;
+        }
+        #div1 {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+        }
+        #div2 {
+            position: absolute;
+            top: 200px;
+            left: 300px;
+        }
+        #div3 {
+            position: absolute;
+            top: 200px;
+            left: 500px;
+        }
+        #div4 {
+            position: absolute;
+            top: 200px;
+            left: 700px;
+        }
+        #div5 {
+            position: absolute;
+            top: 400px;
+            left: 100px;
+        }
+        #div6 {
+            position: absolute;
+            top: 400px;
+            left: 300px;
+        }
+        #div7 {
+            position: absolute;
+            top: 400px;
+            left: 500px;
+        }
+        #div8 {
+            position: absolute;
+            top: 400px;
+            left: 700px;
+        }
+        #div9 {
+            position: absolute;
+            top: 600px;
+            left: 100px;
+        }
+        #div10 {
+            position: absolute;
+            top: 600px;
+            left: 250px;
+        }
+        #div11 {
+            position: absolute;
+            top: 550px;
+            left: 500px;
+        }
+        #div12 {
+            position: absolute;
+            top: 600px;
+            left: 700px;
+        }
+        #div13 {
+            position: absolute;
+            top: 870px;
+            left: 100px;
+        }
+
+        #div14 {
+            position: absolute;
+            top: 850px;
+            left: 300px;
+        }
+
+        #div15 {
+            position: absolute;
+            top: 830px;
+            left: 500px;
+        }
+
+        #div16 {
+            position: absolute;
+            top: 840px;
+            left: 700px;
+        }
+
+        div.triangulo_left {
+            border-left: 100px solid rgb(240,173,78);
+            border-top: 50px solid transparent; /*Ancho 1/2*/
+            border-bottom: 50px solid transparent /*Ancho 1/2*/;
+        }
+        div.trapecio {
+            border-bottom: 100px solid rgb(240,173,78);
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            height: 0;
+            width: 50px;
+        }
+
+        div.trapecio_top {
+            border-right: 50px solid transparent;
+            border-left: 50px solid transparent;
+            border-top: 100px solid rgb(240,173,78);
+            width: 50px;
+        }
+        div.ribbon {
+            height: 120px;
+            border-left: 50px solid rgb(240,173,78);
+            border-right: 50px solid rgb(240,173,78);
+            border-bottom: 35px solid transparent;
+        }
+        div.ribbon_b {
+            width: 120px;
+            border-right: 35px solid transparent;
+            border-top: 50px solid rgb(240,173,78);
+            border-bottom: 50px solid rgb(240,173,78);
+        }
+
+        div.luna {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 15px 15px 0 0 rgb(240,173,78);
+        }
+
+        div.cono {
+            border-left: 70px solid transparent;
+            border-right: 70px solid transparent;
+            border-top: 100px solid rgb(240,173,78);
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        div.pac-man {
+            border-right: 50px solid transparent;
+            border-top: 50px solid rgb(240,173,78);
+            border-left: 50px solid rgb(240,173,78);
+            border-bottom: 50px solid rgb(240,173,78);
+            -moz-border-radius: 100%;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+        }
+        div.huevo {
+            width: 95px;
+            height: 135px; 
+            background-color: rgb(240,173,78);
+            -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        div.star-six {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            position: relative;
+        }
+
+        div.star-six:after {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid indianred;
+                position: absolute;
+                content: "";
+                top: 30px;
+                left: -50px;
+            }
+        div.star-five {
+            margin: 50px 0;
+            position: relative;
+            display: block;
+            color: red;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid red;
+            border-left: 100px solid transparent;
+            -moz-transform: rotate(35deg);
+            -webkit-transform: rotate(35deg);
+            -ms-transform: rotate(35deg);
+            -o-transform: rotate(35deg);
+        }
+
+        div.star-five:before {
+            border-bottom: 80px solid indianred;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -45px;
+            left: -65px;
+            display: block;
+            content: '';
+            -webkit-transform: rotate(-35deg);
+            -moz-transform: rotate(-35deg);
+            -ms-transform: rotate(-35deg);
+            -o-transform: rotate(-35deg);
+        }
+
+        div.star-five:after {
+            position: absolute;
+            display: block;
+            color: darkred;
+            top: 3px;
+            left: -105px;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid darkred;
+            border-left: 100px solid transparent;
+            -webkit-transform: rotate(-70deg);
+            -moz-transform: rotate(-70deg);
+            -ms-transform: rotate(-70deg);
+            -o-transform: rotate(-70deg);
+            content: '';
+        }
+
+        div.rombo {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom: 70px solid red;
+            position: relative;
+            top: -50px;
+        }
+
+            div.rombo:after {
+                content: '';
+                position: absolute;
+                left: -50px;
+                top: 70px;
+                width: 0;
+                height: 0;
+                border: 50px solid transparent;
+                border-top: 70px solid indianred;
+            }
+        div.diamante {
+            border-style: solid;
+            border-color: transparent transparent red transparent;
+            border-width: 0 25px 25px 25px;
+            height: 0;
+            width: 50px;
+            position: relative;
+            margin: 20px 0 50px 0;
+        }
+
+            div.diamante:after {
+                content: "";
+                position: absolute;
+                top: 25px;
+                left: -25px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-color: indianred transparent transparent transparent;
+                border-width: 70px 50px 0 50px;
+            }
+
+        div.pentagono {
+            width: 54px;
+            border-width: 50px 18px 0;
+            border-style: solid;
+            border-color: red transparent;
+        }
+
+        div.pentagono:before {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -85px;
+            left: -18px;
+            border-width: 0 45px 35px;
+            border-style: solid;
+            border-color: transparent transparent indianred;
+        }
+        div.hexagono {
+            width: 100px;
+            height: 55px;
+            background: red;
+            position: relative;
+        }
+
+        div.hexagono:before {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 25px solid indianred;
+        }
+
+        div.hexagono:after {
+            content: "";
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 25px solid darkred;
+        }
+        div.octogono {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+        }
+
+        div.octogono:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 29px solid indianred;
+            border-left: 29px solid #eee;
+            border-right: 29px solid #eee;
+            width: 42px;
+            height: 0;
+        }
+
+        div.octogono:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top: 29px solid darkred;
+            border-left: 29px solid #eee;
+            border-right: 29px solid #eee;
+            width: 42px;
+            height: 0;
+        }
+
+        div.corazon {
+            position: relative;
+            width: 100px;
+            height: 90px;
+        }
+            div.corazon:before,
+            div.corazon:after {
+                position: absolute;
+                content: "";
+                left: 50px;
+                top: 0;
+                width: 50px;
+                height: 80px;
+                background: red;
+                -moz-border-radius: 50px 50px 0 0;
+                border-radius: 50px 50px 0 0;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-transform-origin: 0 100%;
+                -moz-transform-origin: 0 100%;
+                -ms-transform-origin: 0 100%;
+                -o-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+            }
+
+            div.corazon:after {
+                left: 0;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-transform-origin: 100% 100%;
+                -moz-transform-origin: 100% 100%;
+                -ms-transform-origin: 100% 100%;
+                -o-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+            }
+    </style>
+</head>
+
+<body>
+    <hgroup>
+        <h1>Formas geométricas</h1>
+        <h2>Dibujando otras formas</h2>
+    </hgroup>
+    <div id="div1" class="trapecio"></div>
+    <div id="div2" class="trapecio_top"></div>
+    <div id="div3" class="ribbon"></div>
+    <div id="div4" class="ribbon_b"></div>
+
+    <div id="div5" class="luna"></div>
+    <div id="div6" class="cono"></div>
+    <div id="div7" class="pac-man"></div>
+    <div id="div8" class="huevo"></div>
+
+    <div id="div9" class="star-six"></div>
+    <div id="div10" class="star-five"></div>
+    <div id="div11" class="rombo"></div>
+    <div id="div12" class="diamante"></div>
+
+    <div id="div13" class="pentagono"></div>
+    <div id="div14" class="hexagono"></div>
+    <div id="div15" class="octogono"></div>
+    <div id="div16" class="corazon"></div>
+
+</body>
+</html>

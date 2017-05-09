@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+    <meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejeemplos de HTML5/CSS3: Formas geométricas">
+	<meta name="generator" content="Visual Studio" >
+    <meta charset="UTF-8">
+	<title>Formas con CSS</title>
+	<link rel="shortcut icon" href="fav_icon.png">
+    <style>
+        body {
+            margin: 5% 10% 5% 10%;
+        }
+        #div1 {
+            position: absolute;
+            top: 200px;
+            left: 100px;
+        }
+        #div2 {
+            position: absolute;
+            top: 200px;
+            left: 300px;
+        }
+        #div3 {
+            position: absolute;
+            top: 200px;
+            left: 500px;
+        }
+        #div4 {
+            position: absolute;
+            top: 200px;
+            left: 700px;
+        }
+        #div5 {
+            position: absolute;
+            top: 400px;
+            left: 100px;
+        }
+        #div6 {
+            position: absolute;
+            top: 400px;
+            left: 300px;
+        }
+        #div7 {
+            position: absolute;
+            top: 400px;
+            left: 500px;
+        }
+        #div8 {
+            position: absolute;
+            top: 400px;
+            left: 700px;
+        }
+        #div9 {
+            position: absolute;
+            top: 600px;
+            left: 100px;
+        }
+        #div10 {
+            position: absolute;
+            top: 600px;
+            left: 300px;
+        }
+        #div11 {
+            position: absolute;
+            top: 600px;
+            left: 500px;
+        }
+        #div12 {
+            position: absolute;
+            top: 600px;
+            left: 700px;
+        }
+
+        div.triangulo_left {
+            border-left: 100px solid rgb(240,173,78);
+            border-top: 50px solid transparent; /*Ancho 1/2*/
+            border-bottom: 50px solid transparent /*Ancho 1/2*/;
+        }
+        div.triangulo_top {
+            border-top: 100px solid rgb(240,173,78);
+            border-left: 50px solid transparent; /*Ancho 1/2*/
+            border-right: 50px solid transparent /*Ancho 1/2*/;
+        }
+        div.triangulo_right {
+            border-right: 100px solid rgb(240,173,78);
+            border-top: 50px solid transparent; /*Ancho 1/2*/
+            border-bottom: 50px solid transparent /*Ancho 1/2*/;
+        }
+        div.triangulo_bottom {
+            border-bottom: 100px solid rgb(240,173,78);
+            border-left: 50px solid transparent; /*Ancho 1/2*/
+            border-right: 50px solid transparent /*Ancho 1/2*/;
+        }
+        div.triangulo_rect_left {
+            border-left: 80px solid rgb(240,173,78);
+            border-top: 80px solid transparent; /*Ancho igual*/
+            border-bottom: 80px solid transparent /*Ancho igual*/;
+        }
+
+        div.triangulo_rect_top {
+            border-top: 80px solid #f0ad4e;
+            border-left: 80px solid transparent; /*Ancho igual*/
+            border-right: 80px solid transparent /*Ancho igual*/;
+        }
+
+        div.triangulo_rect_right {
+            border-right: 80px solid rgb(240,173,78);
+            border-top: 80px solid transparent; /*Ancho igual*/
+            border-bottom: 80px solid transparent /*Ancho igual*/;
+        }
+
+        div.triangulo_rect_bottom {
+            border-bottom: 80px solid rgb(240,173,78);
+            border-left: 80px solid transparent; /*Ancho igual*/
+            border-right: 80px solid transparent /*Ancho igual*/;
+        }
+        div.triangulo_rect_bottom_right {
+            border-right: 50px solid rgb(240,173,78);
+            border-top: 50px solid transparent;
+            border-left: 50px solid transparent;
+            border-bottom: 50px solid rgb(240,173,78);
+        }
+        div.triangulo_rect_bottom_left {
+            border-right: 50px solid transparent;
+            border-top: 50px solid transparent;
+            border-left: 50px solid rgb(240,173,78);
+            border-bottom: 50px solid rgb(240,173,78);
+        }
+        div.triangulo_rect_top_left {
+            border-top: 100px solid rgb(240,173,78);
+            border-right: 100px solid transparent;          
+        }
+        div.triangulo_rect_top_right {
+            border-top: 100px solid rgb(240,173,78);
+            border-left: 100px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <hgroup>
+        <h1>Formas geométricas</h1>
+        <h2>Dibujando triángulos</h2>
+    </hgroup>
+    <div id="div1" class="triangulo_left"></div>
+    <div id="div2" class="triangulo_top"></div>
+    <div id="div3" class="triangulo_right"></div>
+    <div id="div4" class="triangulo_bottom"></div>
+    <div id="div5" class="triangulo_rect_left"></div>
+    <div id="div6" class="triangulo_rect_top"></div>
+    <div id="div7" class="triangulo_rect_right"></div>
+    <div id="div8" class="triangulo_rect_bottom"></div>
+    <div id="div9" class="triangulo_rect_bottom_right"></div>
+    <div id="div10" class="triangulo_rect_bottom_left"></div>
+    <div id="div11" class="triangulo_rect_top_left"></div>
+    <div id="div12" class="triangulo_rect_top_right"></div>
+
+</body>
+</html>

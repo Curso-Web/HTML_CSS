@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gradientes</title>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			div {height: 150px;
+				width: 300px;
+				float:left;
+				margin: 1em;}
+			.lineal {
+				/* fallback color & image */
+				background-color: #66cccc;
+				background-image: url(images/fallback-image.png);
+				/* Firefox 3.6+ */
+				background: -moz-linear-gradient(#336666, #66cccc);
+				/* Safari 4+, Chrome 1+ */
+				background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#66cccc), to(#336666));
+				/* Safari 5.1+, Chrome 10+ */
+				background: -webkit-linear-gradient(#336666, #66cccc); 
+				/* Opera 11.10+ */
+				background: -o-linear-gradient(#336666, #66cccc);
+				background: linear-gradient(#336666, #66cccc);
+				}
+			.radial {
+				background: radial-gradient(circle, #336666, #66cccc);
+			}	
+	</style>
+	</head>
+	<body>
+	
+		<div class="lineal"></div>
+		<div class="radial"></div>
+
+	</body>
+</html>

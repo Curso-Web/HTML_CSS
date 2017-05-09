@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Titan+One);
+@import url(http://fonts.googleapis.com/css?family=Bevan);
+
+body {
+    margin: 1% 5%;
+}
+
+/*Título principal, resaltado con un color de fondo, y una sombra*/
+h1 {
+    font-family: 'Righteous', cursive;
+    margin: 5% 3% 5% 0%;
+    padding-left: 1em;
+    background-color: rgba(128,0,0,1);
+    color: beige;
+    box-shadow: 10px 10px beige;
+}
+
+/*Elemento de estilo aplicado a nombres estrangeros*/
+b { 
+   color: rgb(128, 128, 128);
+}
+
+/*Letra del primer parrafo del cuerpo ligeramente más grande*/
+div.bio p:first-child {
+    font-size: 1.1em;
+    margin-bottom: 2%;
+}
+
+/*Contenedor del elemento suplementario*/
+div.add {
+    float: right;
+    width: 45%;
+    margin: 0 3% 1% 3%;
+    font-family: 'Righteous', cursive;
+    font-size: 0.9em;
+        
+}
+/*Lineas sombreadas en la parte superior e inferior del elemento suplementario*/
+div.add hr {
+    box-shadow: 2px 1px rgba(128,0,0,0.1);
+}
+
+/*Contenedor del texto  del elemento suplementario con color de fondo*/
+div.add div {
+    background-color: rgba(128,0,0,0.1);
+    padding: 0.1% 5%;
+    }
+
+/*Título 2 en el elemento suplementario*/
+div.add h2 {
+    margin-bottom: 0px;
+}
+
+/*Primer párrafo en elemento suplementario*/
+div.add p:nth-of-type(1){
+    padding-top: 0.5em;
+    margin-top: 0px;
+}
+
+/*Pie de página con la firma*/
+footer {
+    border-top: 1px solid rgba(128,0,0,1);
+    padding-top: 1em;
+}     
