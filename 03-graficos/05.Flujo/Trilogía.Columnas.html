@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Tres columnas: Tables</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		body{quotes: "«" "»";}
+        header {
+            margin: 5% 10%;
+        }
+	    h1 {
+	    	font-family: "Arial";
+	    	font-size: 2em}
+	    section.trilogia {display: table;
+	    	          width: 90%;
+	    			  border-style: solid;
+				 	  border-width: 2px 0px;
+				 	  margin: 0.1em auto ;
+                      border-collapse: separate;
+                      border-spacing: 15px;
+	    }
+        div.trilogía_fila {
+            display: table-row;
+        }
+        article.novela {
+            display: table-cell;
+            margin: 0px; /*En este caso el margen no tienen efecto*/
+            padding: 01em 0.5em;
+            width: 33%;
+            vertical-align: middle;
+            background-color: beige;
+        }
+        article.novela h2 {
+            text-align: center;         
+        }
+            
+         section.intro, section.autor {
+                float: left;
+                margin: 1em 5%;
+            }
+
+	    blockquote {font-style:italic;}
+	    blockquote::before {content: open-quote;} 
+	    blockquote::after {content: close-quote;}
+		
+	</style>
+</head>
+
+<body>
+    <header>
+        <h1>Trilogia del Sprawl - William Gibson</h1>
+    </header>
+    <section class="intro">
+        <blockquote cite="Bruce Sterling">
+            Despídete de todos los futuros rancios. He aquí un mundo enteramente nuevo, intenso como una sacudida eléctrica. La prosa de William Gibson, asombrosa por su claridad y oficio, se convierte en poesía eléctrico-tecnológica... Una fascinante historia de aventuras, brillante y coherente como un láser.
+        </blockquote>
+    </section>
+	
+    <section class="trilogia">
+        <div class="trilogia_fila">
+            <article class="novela">
+                <h2>Neuromante</h2>
+                <p>Un futuro invadido por microprocesadores, en el que la información es la materia prima. Vaqueros como Henry Dorrett Case se ganan la vida hurtando información, traspasando defensas electrónicas, bloques tangibles y luminosos, como rascacielos geométricos. En este espeluznante y sombrío futuro la mayor parte del este de Norteamérica es una única y gigantesca ciudad, casi toda Europa un vertedero atómico y Japón una jungla de neón, corruptora y brillante, donde una persona es la suma de sus vicios.</p>
+            </article>
+            <article class="novela">
+                <h2>Conde Cero</h2>
+                <p>Siete años después de los acontecimientos de Neuromante, el Conde Cero, pirata de sistemas de información, consigue una rara pieza de software, se conecta a la matriz, y casi pierde la cabeza. La Matriz de Ciberespacio, una base sinérgica que abarca todo el planeta, se ha transformado en una red sensitiva. Pero la humanidad no se ha dado cuenta. La muchacha cuyo sistema nervioso ha sido alterado para que pueda tener acceso a la Matriz, tampoco entiende lo que ocurre. Mientras, en Francia, la encargada de una galería trata de encontrar al misterioso y desconocido creador de ciertos objetos de arte, poderosos y únicos. </p>
+            </article>
+            <article class="novela">
+                <h2>Mona Lisa Acelerada</h2>
+                <p>En el universo alucinatorio del cyberespacio, a la vez lírico y mecánico, erótico y violento, la vida de la joven Mona se cruza inevitablemente con la vida de la famosa Angie Mitchell. Angie ha sido capaz desde niña de entrar en el cyberespacio sin necesidad de una computadora. Dentro de la matriz una entidad fantasmal -que ha acumulado vastas cantidades de información para obtener lo que quiere- pretende utilizar a Angie en una trama que ella misma no puede controlar, ni siquiera entender. Mientras tanto, detrás de todo, se mueve la sombría Yakuza, la despiadada y poderosa internacional japonesa que manipula -o cree manipular-gentes y acontecimientos.</p>
+            </article>
+        </div>
+        </section>
+	<section class="autor">
+		<p>William Gibson cuya primera novela El Neuromante puede llamarse la novela ciberpunk, es la llanta mas refulgente del movimiento. Epica en escala, mezcla alta tecnologia con una sensibilidad de cine negro, una especie de Homero que escribe la Odisea saliendole de microchips.</p>
+		<blockquote cite="The Wall Street Journal">Mientras la ficción moderna se retira a pequeños cuartos construidos con las neurosis del presente, unos pocos visionarios están creando una macroficción extrema, madura de ideas, bien escrita, y que ilustra adecuadamente esta época de comunicación global instantánea... William Gibson es la llama más ardiente de ese movimiento.</blockquote>
+	</section>
+</body>

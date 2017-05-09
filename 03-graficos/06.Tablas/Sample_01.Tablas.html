@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		body {margin-left:5%}
+	</style>
+</head>
+
+<body>
+	<h1>Tablas</h1>
+	<h2>Tabla sencilla</h2>
+	<table>
+		<tr>
+			<td>Cell 1</td>
+    		<td>Cell 2</td>
+   		</tr>
+   		<tr>
+      		<td>Cell 3</td>
+      		<td>Cell 4</td>
+   		</tr>
+	</table>
+
+	<h2>Tabla con encabezados</h2>
+	<table>
+		<tr>
+			<th> </th>
+			<th scope="col">Col 1</th>
+    		<th scope="col">Col 2</th>
+   		</tr>
+		<tr>
+			<th scope="row">Fil 1</th>
+    		<td>Cell 1</td>
+    		<td>Cell 2</td>
+   		</tr>
+   		<tr>
+      		<th scope="row">Fil 2</th>
+      		<td>Cell 3</td>
+    		<td>Cell 4</td>
+   		</tr>
+	</table>
+
+	<h2>Tabla extensa</h2>
+	
+	<table>
+		<thead>
+			<tr>
+				<th>Fecha</th>
+				<th>Entradas</th>
+				<th>Salidas</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1 Enero</th>
+				<td>250</td>
+				<td>36</td>
+			</tr>
+			<tr>
+				<th>2 Enero</th>
+				<td>285</td>
+				<td>48</td>
+			</tr>
+			<tr>
+				<th>3 Enero</th>
+				<td>265</td>
+				<td>87</td>
+			</tr>
+			<tr>
+				<th>4 Enero</th>
+				<td>265</td>
+				<td>64</td>
+			</tr>
+			<tr>
+				<th>5 Enero</th>
+				<td>257</td>
+				<td>43</td>
+			</tr>
+			<!-- continuar con las filas adicionales  -->
+			<tr>
+				<th>31 Enero</th>
+				<td>129</td>
+				<td>64</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td> </td>
+				<td>7824</td>
+				<td>1241</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
