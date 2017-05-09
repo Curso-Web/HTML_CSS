@@ -2,7 +2,13 @@ h1{
 	font-family:"Bavand",fantasy;
 	font-size:46px;
 	color:red;
+	quotes: "'" "'"
 }
+
+h1:before {content: "";}
+h1:after {content: close-quote;};
+
+
 span.Autor{
 	font-weight:bold;
 	text-decoration:underline;
@@ -22,9 +28,8 @@ q{
 	color:green;
 	quotes: "«" "»";
 }
-/*q:before, q:after {content: quotes;}*/
-p:before, p:after {content: quotes;
-					 quotes: "«" "»";}
+/*q ya incluye :before {content: open-quote;}, :after {content: close-quote;}*/
+					 }
 /* p.Fuentes */
 
 address, p:nth-of-type(4) {
