@@ -8,11 +8,13 @@
 		<meta name="description" content="Cajas de colores">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-		header
-			{overflow: auto}
+
 		h1, h2{ width: 40%;
 				margin: 0px }
-		div {width: 30%}	
+		div {width: 30%}
+		.clear_fix {
+			width: 100%;
+			clear: both}	
 		h1, h2, div {float: left}
 		h1 {
 		/*	background-color: olive; */
@@ -25,16 +27,15 @@
 		</style>
 	</head>
 	<body>
-		<header>
 			<h1>Titulo</h1>
 			<h2>Subtitulo</h2>
-		</header>
-		<div>
+		<div class="clear_fix"></div>
+		<div id="div1">
 			<p id="p1">Hola que tal</p>
 			<p id="p2">Saludos</p>
 		</div>
 		<div>
-			Segunda columna
+			<p>Segunda columna</p>			
 		</div>
 	</body>
 </html>

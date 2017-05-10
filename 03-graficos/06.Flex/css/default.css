@@ -6,7 +6,7 @@ body {
     margin: 1% 5%;
 }
 
-/*TÃ­tulo principal, resaltado con un color de fondo, y una sombra*/
+/*Título principal, resaltado con un color de fondo, y una sombra*/
 h1 {
     font-family: 'Righteous', cursive;
     margin: 5% 3% 5% 0%;
@@ -21,7 +21,7 @@ b {
    color: rgb(128, 128, 128);
 }
 
-/*Letra del primer parrafo del cuerpo ligeramente mas grande*/
+/*Letra del primer parrafo del cuerpo ligeramente más grande*/
 div.bio p:first-child {
     font-size: 1.1em;
     margin-bottom: 2%;
@@ -47,18 +47,18 @@ div.add div {
     padding: 0.1% 5%;
     }
 
-/*Tï¿½tulo 2 en el elemento suplementario*/
+/*Título 2 en el elemento suplementario*/
 div.add h2 {
     margin-bottom: 0px;
 }
 
-/*Primer pï¿½rrafo en elemento suplementario*/
+/*Primer párrafo en elemento suplementario*/
 div.add p:nth-of-type(1){
     padding-top: 0.5em;
     margin-top: 0px;
 }
 
-/*Pie de pï¿½gina con la firma*/
+/*Pie de página con la firma*/
 footer {
     border-top: 1px solid rgba(128,0,0,1);
     padding-top: 1em;
