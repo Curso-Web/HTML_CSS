@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Imágenes y bloques</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style type="text/css">
+		body {margin: 2em}
+		img#img_3, img#img_2, div#div_1 {border: solid 2px maroon;
+				  margin-right: 1em}
+        img#img_3, img#img_4 {
+            float: left;
+        }
+		/*img {width: 400px;
+			height: 267px}*/
+        div#div_2 {
+            width: 200px;
+            border: solid 2px maroon;
+            float: left;
+        }
+        section {clear: both;
+				margin: 2em;
+                overflow: auto;
+        }	
+
+		</style>
+</head>
+
+<body>
+
+	<h1>Imágenes y css</h1>
+	<section>
+		<img id="img_0" src="Komodo.535.jpg" alt="Varano de Komodo">
+		<p>Imágen antes de un parrafo, sin aplicarle ningún estilo. Se comporta como elemente inline-bloque, por lo que ocupa todo el ancho de su contenedor (aunque no se ve)</p>	
+	</section>
+	<section>
+		<div id="div_1">
+			<img id="img_1" src="Komodo.535.jpg" alt="Varano de Komodo">		
+		</div>
+		<p>La misma imagen dentro de un div al que se le aplica un margen; el div se adapta al tamaño del elemento inline-block, por lo que de nuevo ocupa todo el ancho.</p>
+	</section>	
+	<section>
+		<img id="img_2" src="Komodo.535.jpg" alt="Varano de Komodo">
+		<p>La misma imagen aplicandole un margen: aunque el margen rodea solo la imágen, el bloque que la contiene (el elemnto inline-block) sigue ocupando todo el ancho</p>	
+	</section>
+	<section>
+		<img id="img_3" src="Komodo.535.jpg" alt="Varano de Komodo">
+		<p>Imagen a la que aplicamos la propiedad float; el espacio que ocupa el elemento corresponde al tamaño de la imagen y el texto puede fluir en torno a el. Por tanto, ante el float la imágen se comporta completamente como un bloque de tamaño definido.</p>	
+	</section>
+    <section>
+        <div id="div_2">
+            <img id="img_4" src="Komodo.535.jpg" alt="Varano de Komodo">
+        </div>
+        <p>Imagen dentro de un div mas pequeño que ella al que aplicamos la propiedad float; el espacio que ocupa el elemento corresponde al tamaño del div y el texto puede fluir en torno a el colocaándose por encima de la parte de la imágen . .</p>
+    </section>
+	
+	
+	
+</body>

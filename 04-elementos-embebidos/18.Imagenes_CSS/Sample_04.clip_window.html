@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>..</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+        div:nth-of-type(2) {
+            position: absolute;
+            clip: rect(10px,350px,200px,250px);
+        } /* our coordinates, all from the top-left corner
+		 of the element to be clipped: top, right, bottom, left*/
+        div:nth-of-type(1) {
+            position: absolute;
+            top: 90px;
+            left: 260px;
+            width: 100px; /*350-250*/
+            height: 190px; /*200-10*/
+            overflow: auto;
+            z-index:1;
+        } /*El primer div coincide con la parte visible de la imagen
+            y se coloca encima del segundo*/
+
+            div:nth-of-type(1):hover + div {
+                clip: initial;
+            } /*Al hacer hover en el primer div, se anula el valor clip aplicado en el segundo*/
+		
+	</style>
+</head>
+
+<body>
+	<h1>Dragon de Komodo.</h1>
+    <div></div>	
+	<div>
+		<img src=Komodo.535.jpg alt="Varano">
+	</div>
+</body>
+</html>

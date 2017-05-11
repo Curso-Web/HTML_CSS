@@ -1,0 +1,17 @@
+body {
+    width: 90%;
+    margin: 3em auto;
+}
+header {
+    text-align: center
+}    
+article {
+    width: 100%;
+    margin: 3em auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+figure {
+    padding: 0.5em 0.5em;
+	flex: 1 1 10%;
+}
