@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Video - Shadowrun</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+</head>
+
+<body>
+	
+	 
+	<h1>Video HTML5 - Shadowrun</h1>
+	<video width="700px" controls poster="shadowrunreturns.jpg">
+		<!-- Fuentes válidas en los distintos navegadores
+		-->		
+		<source src="../_Video/Shadowrun.mp4" type="video/mp4"> </source>
+		<source src="../_Video/Shadowrun.ogg" type="video/ogg"> </source>
+		<source src="../_Video/Shadowrun.webm" type="video/webm"> </source>
+		<!--Navegadores sin HTML5 distintos de IE			
+		-->
+		<object data="../_Video/Shadowrun.mp4" height="400px" width="700px"> Sin video
+			<param name="autoplay" value="false">
+		</object>
+		<!--Versiones de IE sin HTML5			
+		 <embed src="Video/Shadowrun.mp4"> </embed>
+		 -->
+	</video>
+	
+
+</body>
+</html>

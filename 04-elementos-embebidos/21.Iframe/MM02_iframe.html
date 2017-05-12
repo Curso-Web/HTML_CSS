@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Contenido con iframe</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+        body {
+            width: 90%;
+            margin: 1em auto;
+        }
+        div {
+            width: 50%;
+            float: left;
+        }
+		div iframe {
+			/* width:"640px"; sin efecto 
+			 height:"360px"; sin efecto */
+			border: 2px solid maroon;
+		}
+	</style>
+</head>
+
+<body>
+    <header>
+        <h1>Objetos embebidos con la etiqueta iframe</h1>
+    </header>
+    <article>
+        <p>Documentos web diseñados específicamente para ser incorporados en otros como inline frames</p>
+        <p>El borde ha sido añadido mediante CSS</p>
+        <div>
+            <h2>Desde la web de Youtube</h2>
+            <iframe width="420" height="315" src="http://www.youtube.com/embed/2FpwjQLZTTs" allowfullscreen>No se pudo acceder al inline frame </iframe>
+        </div>
+        <div>
+            <h2>Desde la web de Scratch</h2>
+            <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/11358878/?autostart=false" allowfullscreen>No se pudo acceder al inline frame</iframe>
+        </div>
+        <p>Ejemplo de una página web "normal" accedida mediante un inline frame</p>
+        <iframe width="100%" height="400" src="http://www.w3schools.com/tags/tag_iframe.asp">No se pudo acceder al inline frame</iframe>
+    </article>
+</body>
+</html>

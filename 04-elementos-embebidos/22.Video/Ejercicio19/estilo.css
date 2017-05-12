@@ -1,0 +1,42 @@
+  .centrado{
+   
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .polaroid {
+    padding:10px 10px 50px 10px;
+    border:1px solid #BFBFBF;
+    background-color:white;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+  }
+  
+  .polaroidContenedor {
+    width:250px;
+    padding:10px 10px 10px 10px;
+    border:1px solid #BFBFBF;
+    background-color:white;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+  }
+
+  .RotarIzq {
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); /* IE9 */
+    -webkit-transform:rotate(10deg); /* Safari y Chrome */
+    -moz-transform:rotate(10deg); 
+  }
+
+  .RotarDer {
+    transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg); /* IE9 */
+    -webkit-transform:rotate(-10deg); /* Safari y Chrome */
+    -moz-transform:rotate(-10deg); 
+  }
+  
+  .textoPolaroid {
+    display:block;
+    margin-top:1em;
+    text-align:center;
+    font-style:italic;
+    font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
