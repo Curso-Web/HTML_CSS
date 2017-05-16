@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Menú desplegable</title>
+		<meta name="author" content="E.Vadillo">
+		<link rel="stylesheet" href="mystyle.css">
+		
+		<style>
+			footer {clear:both;
+			}
+			ul li {list-style-type:none;
+				text-decoration:none;
+			}
+			li.opciones {float:left;
+				margin:20px;
+			}
+			li > ul {display:none;
+			}
+			li:hover > ul {display:block;
+			}
+			li.opciones {position:relative;
+			}
+			li ul li ul {position:absolute; left:10px; /*No cabe por la posicion absoluta*/
+			}
+			li ul {position:absolute; right:20px;
+			} /*No cabe por la posicion absoluta*/
+			a {text-decoration:none;
+				color:black;
+				display:block;
+				width: 6em;	
+			}
+			#menu {font-size:1.2em;
+				margin:0 auto;
+				padding:0 auto;
+			}
+			ul li a {border:4px solid green;
+				background-color:lime;
+				border-radius: 5px;
+				padding:6px;
+			}
+			.ultimo {padding:5px;	
+			}			
+		</style>
+		
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		
+	</head>
+
+	<body>
+		<header>
+			<h1><span>Menú desplegable</span></h1>
+		</header>
+		
+		<nav>	
+			<ul id="menu">
+				<li class="opciones"><a href="#">Home</a></li>
+				<li class="opciones"><a href="#">Opción 1</a>
+					<ul>
+						<li class="ultimo"><a href="#">Opción 1.1</a></li>
+						<li class="ultimo"><a href="#">Opción 1.2</a></li>
+						<li class="ultimo"><a href="#">Opción 1.3</a></li>
+					</ul>
+				</li>
+				<li class="opciones"><a href="#">Opción 2</a>		
+					<ul>
+						<li class="ultimo"><a href="#">Opción 2.1</a></li>
+						<li class="ultimo"><a href="#">Opción 2.2</a></li>
+					</ul>
+				</li>
+				<li class="opciones"><a href="#">Opción 3</a>
+					<ul>
+						<li><a href="#">Opción 3.1</a></li>
+						<li><a href="#">Opción 3.2</a>
+							<ul>
+						<li><a href="#">Opción 3.2.1</a></li>
+						<li><a href="#">Opción 3.2.2</a></li>
+						<li><a href="#">Opción 3.2.3</a></li>
+					</ul>
+						</li>
+					</ul>
+				</li>
+			</ul> 
+		</nav>
+		
+		<aside>
+			
+		</aside>
+		
+		<article>
+			<section>
+
+			</section>
+		</article>
+		
+		<footer>
+			<hr>
+			<p>&copy; Copyright  by E.Vadillo </p>
+		</footer>
+	</body>
+</html>

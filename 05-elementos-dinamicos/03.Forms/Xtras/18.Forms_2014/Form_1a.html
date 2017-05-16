@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		form {
+			width:70%}
+		fieldset#fs_coments, fieldset#fs_bottons {
+			border-style:none
+		}
+		fieldset#fs_bottons {
+			margin-left:10%;
+		}
+		label {
+			width:30%;
+			padding-right:10%;
+			text-align:right;
+			display:inline-block;
+			float:left;
+			clear:left}
+		input {
+			display:inline-block;
+			float:left;
+			clear:right}	
+		textarea{
+			width:40%;
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h1 title="Formulario 1">Formulario de inscripción</h1>
+		<form method="post" action="mailto:alcerezo@microforum.es" enctype="text/plain">
+			<fieldset id="fs_datos">
+				<legend>Datos personales</legend>
+			    <label for="name">Nombre:</label><input type="text" name="name" size="30">	
+				<label for="email">E-mail:</label><input type="email" name="email" size="30" maxlength="100" placeholder="Escriba su e-mail">   
+				<label for="address">Domicilio:</label><input type="text" name="address" size="30"maxlength="200">
+	    		<label for="city" >Ciudad:</label><input type="text" name="city"> 
+	    		<label for="ZIP">Código Postal:</label><input type="text" name="ZIP" size="10">			
+			</fieldset>
+			<fieldset id="fs_coments">
+				<label for="coments" >Comentarios</label>
+				<textarea name="coments"> </textarea>
+			</fieldset>
+			<fieldset id="fs_bottons">
+				<p><input type="submit" value="Submit"> &nbsp; <input type="reset" value="Clear"></p>
+			</fieldset>
+	   </form>  
+	</div>
+</body>
+</html>

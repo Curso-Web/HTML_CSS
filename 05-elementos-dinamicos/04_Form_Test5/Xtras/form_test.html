@@ -1,0 +1,145 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+ <head>
+  	<title>Formularios JavaScript - java023</title>
+  	<meta http-equiv=content-type content="text/html; charset=UTF-8" />
+  	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<link rel="stylesheet" href="css/java023.css" type="text/css" />
+  	<script src='scripts/java023.js'> </script>
+ </head>
+
+ <body>
+  	<noscript>
+   	 	<p>
+     	<em>Si lees este mensaje es que el navegador no ejecuta JavaScript. Act&iacute;valo para disponer de todas las funcionalidades mientras rellenas el formulario sino es posible que algunos datos no lleven el formato adecuado.
+		</em>
+    	</p>
+  	</noscript>
+  
+ <form name="encuesta" action="java023.php" method="post" onsubmit="Aficion(); return Datos()" onclick="Prueba()">
+ <!-- si Datos() devuelve falso no se ejecuta el submit debido al evento onsubmit. Debe ser true para el envío -->
+
+ <fieldset><legend>Datos del alumno</legend>
+  <fieldset class="Izquierda">
+   <legend>Identificaci&oacute;n</legend>
+   <p>
+    <label for="Correo">Cuenta de correo</label>
+    <input size="30" title="Introduzca su direcci&oacute;n de correo" maxlength="50"  value="cuenta@dominio.com" 
+      		name="Correo" id="Correo" onchange="Actualizar(this), Minusculas()">
+   </p>
+   <p>
+    <label for="Clave1">Introduzca su clave de acceso</label>
+    <input id="Clave1" size="10" maxlenght="10" name="Clave1" type="password" onchange="Actualizar(this)"/>
+   </p>
+   <p>
+    <label for="Clave2">Repita la clave de acceso</label>
+    <input id="Clave2" size="10" maxlenght="10" name="Clave2" type="password" onchange="Actualizar(this)"/>
+   </p>
+  </fieldset>
+
+  <fieldset class="Derecha">
+   <legend>Datos Personales</legend>
+   <p>
+    <label for="Nombre">Nombre</label>
+    <input size="30" title="Introduzca su nombre" maxlength="40" name="Nombre" id="Nombre"
+			onchange="Actualizar(this), PrimeraMayuscula(this), Activar(this, document.forms.encuesta.Apellido1)"/>
+   </p>
+  <p>
+    <label for="Apellido1">Primer apellido</label>
+    <input size="30" maxlength="30" disabled="true" name="Apellido1" id="Apellido1" 
+			onchange="Actualizar(this), PrimeraMayuscula(this), Activar(this, document.forms.encuesta.Apellido2)"/>
+   </p>
+  <p>
+    <label for="Apellido2">Segundo apellido</label>
+    <input size="30" maxlength="30" disabled="true" name="Apellido2" id="Apellido2" 
+			onchange="Actualizar(this), PrimeraMayuscula(this)"/>
+  </p>
+
+  <fieldset>
+   <legend>Fecha de nacimiento</legend>
+	<p>
+    	<label for="dia">D&#237;a</label>
+    	<input size="2" maxlength="2" name="dia" id="dia" value="01" onchange="Actualizar(this)"/>
+	<label for="mes">Mes</label>
+    	<input size="2" maxlength="2" name="mes" id="mes" value="01" onchange="Actualizar(this)"/>
+	<label for="anio">A&#241;o</label>
+    	<input size="4" maxlength="4" name="anio" id="anio"	value="2007" onchange="Actualizar(this)"/>
+   	</p>
+  </fieldset>
+ </fieldset>
+
+  <fieldset class="Izquierda"><legend>Curso</legend>
+   <p>
+	 <input type="radio" name="Curso" checked id="web" value="web" onclick="Asignaturas(this.value)"/>
+		<!-- onclick="Asignaturas('web')" enviaría exactamente lo mismo -->
+     <label for="web">Programador Web</label>
+     <br>
+     <input type="radio" name="Curso" id="sistemas" value="sistemas" onclick="Asignaturas(this.value)"/>
+     <label for="sistemas">Programador de Sistemas</label>
+     <br>
+     <input type="radio" name="Curso" id="objeto" value="objeto" onclick="Asignaturas(this.value)"/>
+     <label for="objeto">Programador de Objetos</label>
+   </p>
+
+  <p>
+   <select id="Materias" name="Materias" size="4" > 
+    	<option value="1">Html</option>
+    	<option value="2">CSS</option>
+    	<option value="3">JavaScript</option>
+    	<option value="4">PHP</option>
+    </select>
+  </p>
+    </fieldset>
+
+ <fieldset class="Derecha">
+   <legend>Aficiones</legend>
+   <p>
+	<input type="checkbox" id="Musica" name="Musica" />
+     	<label for="Musica">  M&#250;sica  </label>
+	<input class="aficiones" type="checkbox" id="Viajar" name="Viajar" />
+     	<label for="Viajar">  Viajar </label>
+	<input class="aficiones" type="checkbox" id="Pintura" name="Pintura" />
+     	<label for="Pintura">  Pintura </label>
+	<input class="aficiones" type="checkbox" id="Foto" name="Foto" />
+     	<label for="Foto">  Fotograf&#237;a </label>
+   </p>
+   <p>
+    <input type="checkbox" id="Cine" name="Cine" />
+    	<label for="Cine">  Cine  </label>
+    <input class="aficiones" type="checkbox" id="Lectura" name="Lectura" />
+    	<label for="Lectura">  Lectura  </label>
+	<input class="aficiones" type="checkbox" id="Deporte" name="Deporte" />
+     	<label for="Deporte"> Deporte </label>
+	<input class="aficiones" type="checkbox" id="Baile" name="Baile" />
+     	<label for="Baile">  Baile </label>
+   </p>
+    <input type="hidden" id="aficion" name="aficion" />
+  </fieldset>
+
+ <fieldset class="Izquierda">
+   <p>
+    <button type="submit">
+     		<big>Enviar datos</big>
+    </button>
+    <button type="reset">
+     		<big>Restablecer  valores</big>
+    </button>
+   </p>
+ </fieldset>
+
+<fieldset class="Derecha">
+ 	<script> 
+	<!--
+		FechaActual();
+	// -->
+	</script>
+ </fieldset>
+
+ </fieldset>
+
+ </form>
+ </body>
+</html>

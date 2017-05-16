@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="ALCe65" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Formulario 2</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		form {width: 50%;}
+		.field {width: 30%;
+				display: block;
+				float:left;}
+		.datos {width: 50%;
+				display: block;
+				float:left;}
+		.full { margin-left: 20%;
+				padding-left: 0px;
+		}
+		.boton {margin-right: 5%;}
+		ul {list-style-type: none}
+	</style>
+</head>
+
+
+<body>
+	<div>
+		<h1 title="Formulario 1">Prueba de formulario (Femxa)</h1>
+	  
+		<form method="post" id= "form1" name="form1">	   	
+		   	<fieldset>
+		   		<legend>Usuario</legend>
+				<div>
+					<label class="field" for="name" >Nombre:</label>
+					<input class="datos" type="text" id="name" name="name" placeholder="Indica nombre y apellidos">
+				</div>				
+			    <div>
+			    	<label class="field" for="email">E-mail:</label>
+			    	<input class="datos" type="email" id="email" name="email" maxlength="100" placeholder="Escriba su e-mail">
+			    </div>
+			    <div>
+			    	<label class="field" for="address">Domicilio:</label>
+			    	<input class="datos" type="text" id="address" name="address" maxlength="200" placeholder="Indica tu dirección completa">
+			    </div> 
+		    </fieldset> 		
+			<fieldset id="fs_encuesta">
+				<p>Marca si es cierto:</p>
+				<div class="full">
+					<input class="post" type="checkbox" id="Q1" name="Q1" checked="checked">
+					<label class="post" for="Q1">Estoy contento con el curso</label>
+				</div>					
+				<p>Elige tu horario preferido</p>
+				<ul class="full">
+					<li>
+						<input type="radio" id = "m" name="category" value="m" checked="checked">
+						<label for="m">Mañana</label>
+					</li>
+					<li>
+						<input type="radio" id = "t" name="category" value="t">
+						<label for="t">Tarde</label>
+					</li>
+					<li>
+						<input type="radio" name="category" value="n">
+						<label for="t">Noche
+					</li>
+				</ul>
+			</fieldset>   		
+	   		<fieldset>   		
+	      		<div>
+	      			<input class="boton" type="submit" value="Submit">
+	      			<input class="boton" type="reset" value="Clear">
+	      		</div>
+	   		</fieldset>
+	   </form>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,87 @@
+/******* Hoja de estilos ******/
+
+html,body { 
+ 	margin: 0.3%; 
+ 	padding: 0.2%; 
+    color: navy; 
+    background: silver; 
+    font-family: Sans-serif; }
+
+h3 {text-align: center;}
+
+label {
+  	display:block;
+    clear: both;
+  	padding: 0.1em 1em;
+    }
+label.line {
+  	display: inline-block;
+    width: 30%;
+  	 }
+
+fieldset { 
+  	background: steelblue; 
+  	color:white; 
+  	margin-bottom: 1%; 
+  	padding:1% }
+
+
+fieldset#fsFecha {margin: 2em 1em 1em; }
+
+legend { 
+  	background: navy;  
+  	color:white; 
+  	font-weight: bolder; 
+  	border: 1px solid }
+
+.Izquierda {
+  	float: left; 
+  	margin-right: 1%; 
+  	width: 44%; }
+
+.Derecha { 
+  	float: right;
+  	width: 44% }
+
+@media (max-width: 767px) {
+
+  /*fieldset.Derecha { 
+     clear: both;
+     float: left;
+     width: 95%;} */
+
+  fieldset.Derecha, fieldset.Izquierda {
+    clear: both;
+    width: 95%;
+    }
+}
+
+#fsCurso div.Izquierda {width: 60%}
+#fsCurso div.Derecha {width: 30%}
+
+button { margin-left: 1.5%; }
+
+.aficiones{ margin-left: 2%;}
+
+span.label {
+	display: block;
+	float: left;
+	width: 50%;}
+
+fieldset#fsFecha label {
+  padding: 0px
+}
+
+#fsFecha span.label {
+	width:40%;
+}
+
+input {
+	float: left;
+}
+
+input#Correo {width: 45%;}
+input#Clave1, input#Clave2 {width: 35%;}
+fieldset#fsDatos input {width: 45%;}
+fieldset#fsFecha input {width: 40%;}
+fieldset#fsFecha input#anio {width: 55%;}

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Formularios HTML5</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		label {
+			display: block;
+			float:left;
+			clear:left;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Formularios HTML5</h1>
+	<form>
+		<fieldset id="datos">
+			<label>Correo <input type="email" required/></label>
+			<label>URL <input type="url" /></label>
+			<label>Teléfono <input type="tel" /></label>
+			<label>Búsqueda <input type="search" /></label> 
+		</fieldset>
+		<fieldset id="valores">
+			<label>Color <input type="color" /></label>
+			<label>Número <input type="number" /></label>
+			<label>Rango <input type="range" /></label>
+			<label>Fecha <input type="date" /></label> 
+		</fieldset>
+		<fieldset id="patrones">
+			<input type="text" name="pattern-test" pattern="[0-9][A-Z]{3}" />
+		</fieldset>
+		<input type="submit" name="submit"/>	
+	</form>
+</body>
+</html>

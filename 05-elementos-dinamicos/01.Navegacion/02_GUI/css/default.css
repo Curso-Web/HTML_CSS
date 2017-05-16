@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 3em 6em;
+	min-width: 490px;
+	}
+header {
+	margin: 2em auto 1em auto;
+	padding: 2em 1em;
+	width: 80%;
+ 	background-color: maroon;
+	color: beige;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px 2px silver;
+
+	}
+	header > p {
+	 	font-size: 1.3em;
+	}
+
+nav > ul {
+	width: 100%;
+	height: 3em;
+
+}
+article{
+		float: left;
+		clear: left;
+		margin: 2em;
+	} 
+
+	article figure {
+		width: 50%;
+	}
+
+		article figure.izda {
+			float: left;
+		}
+		article figure img {
+			width: 100%;
+		}
+
+
+footer {
+	clear: both;
+ 	margin-top:  2em;
+ 	border-top: solid 1px silver;
+ 	color: maroon;
+ 	}
+ 	footer p {
+ 		margin: 0.2em;
+ 	}
+ header, footer {
+ 	text-align: center;
+ 	}
+
+
+

@@ -1,0 +1,75 @@
+	li { /* Los li son contenedores, para poder fijar desde ellos posiciones absolutas */
+		position: relative;
+		}
+
+/*	el menú principal */
+
+	nav ul { /* Cualquier ul dentro de nav */
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		}
+	nav > ul > li { /* El primer nivel del menú */
+		float:left;
+		min-width: 7em;
+		}
+	nav a { /* Cualquier a dentro de nav */
+		display: block;
+		height: 100%;
+		padding: .7em;
+	}
+
+/* =================== */
+/* = submenús        = */
+/* =================== */
+			
+	li ul { /* El segundo nivel del menú oculto*/
+	 	display: none;
+	 	width: 100%;
+	}
+	li:hover > ul { /* El segundo nivel del menú se muestra */
+	 	display: block;
+        position: absolute; /*Determina que el submenu empuje o no el contenido del sitio al desplegrase*/
+	}
+
+/* =============================== */
+/* = submenús segundos	         = */
+/* =============================== */
+
+
+	li ul li ul {
+		position: absolute;
+		top: 0em;
+		left: 7em;
+		width: 10em;
+	}
+
+/* =============================== */
+/* = Estética del menu	         = */
+/* = Colores, bordes...	         = */
+/* =============================== */
+
+	nav ul {
+		background-color: beige;
+		color: maroon;
+		border: 1px solid silver;
+	}
+
+	nav li {
+		text-align: center;
+	}
+
+	nav a { /* Cualquier a dentro de nav */
+		text-decoration: none;
+
+	}
+
+	nav > ul a:focus {
+ 		background-color: papayawhip;
+		color: maroon;
+	}
+
+	nav > ul a:hover {
+		background-color: maroon;
+		color: beige;
+	}

@@ -1,0 +1,40 @@
+	#container{width:90%;
+				  margin-left: 5%;}
+	header {background-color:#FFA500;
+	        height:50px;}			
+	nav{background-color:#FFD700;
+	       height:250px;
+	       width:20%;
+	       float:left;}
+	#menu {background-color:#FF7700;
+	       height:20%;
+      	 margin-top: 10%;	 
+	       margin-left: 10%;
+	       width:80%;
+	       clear:left;
+	       float:left;
+	       text-align:center;
+	       font-family: "Arial";
+	       font-size: 150%;
+	       font-weight: bold;}
+	.item {background-color:#FFA500;
+	       height:15%;
+	       margin-top: 10%;
+	       margin-left: 20%;
+	       width:60%;
+	       clear: left;
+	       float:left;
+	       text-align:center;
+	       font-family: "Arial";
+	       font-size: 90%;}  
+	.label {vertical-align: -30%;}      
+	article {background-color:#EEEEEE;
+			   height:250px;
+			   width:80%;
+			   float:left;}
+   p {padding-left: 5%}	
+	footer{background-color:#FFA500;
+			  clear:both;
+			  text-align:center;}
+	h1{margin-bottom:0;
+	   text-align:center;}

@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Ejercicio 20</title>
+    <meta name="keywords" content="web, learning, html5, css3">
+    <meta name="author" content="Alejandro">
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Visual Studio">
+    <meta charset="UTF-8">
+    <title>Formulario 1</title>
+    <link rel="shortcut icon" href="fav_icon.png">
+    <style>
+        header, section {
+            width: 50%;
+            min-width: 500px;
+            max-width: 600px;
+            margin: 2em auto;
+        }
+        h1 {
+            color: papayawhip;
+            background-color: maroon;
+            text-align: center;
+            border-radius: 10px 10px;
+            box-shadow: 10px 10px 10px 1px papayawhip;
+            width: 80%;
+            margin: 1em auto;
+        }
+        form {
+            width: 100%;
+            padding: 1em;
+            border-radius: 10px 10px;
+            box-shadow: 10px 10px 10px 1px rgb(128, 128, 128);
+        }
+        label.izda {
+            display: inline-block;
+            width: 40%;
+            padding: 0.2em 1em;
+            text-align: right;
+            vertical-align: top;
+        }
+        [type="text"], [type="email"], [type="url"], [type="tel"], 
+        textarea {
+            width: 50%;
+        }
+        textarea {
+            height: 100px;
+        }
+        div.botones {
+            width: 40%;
+            float: right;
+            padding: 1em;
+        }
+            div.botones input {
+                width: 40%;
+
+            }
+    </style>
+</head>
+<body> 
+    <header>
+        <h1>Solicitud de datos</h1>
+    </header>
+    <section>
+        <form method="get" action="datos.php">
+            <fieldset>
+                <legend>Datos principales</legend>
+                <label for="name1" class="izda">Nombre:</label><input type="text" id="name1" name="name1" required>
+                <label class="izda" for="name2">Apellidos:</label><input type="text" id="name2" name="name2" required>
+                <label class="izda" for="city">Ciudad:</label><input type="text" id="city" name="city">
+                <label class="izda" for="state">Provincia:</label><input type="text" id="state" name="state">
+                <label class="izda" for="email">Correo:</label><input type="email" id="email" name="email" required>
+                <label class="izda" for="web">Sitio Web:</label><input type="url" id="web" name="web" placeholder="Te web personal,twiter, facebok...">
+                <label class="izda" for="telefono">Telefono:</label><input type="tel" id="telefono" name="telefono">
+                <label class="izda" for="coments">Commentarios:</label><textarea id="coments" name="coments" placeholder="Cualquier comentario que consideres adecuado"></textarea>
+                <div class="botones">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

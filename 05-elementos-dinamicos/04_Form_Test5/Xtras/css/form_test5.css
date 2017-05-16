@@ -1,0 +1,61 @@
+/******* Hoja de estilos ******/
+
+html,body { 
+ 	margin: 0.3%; 
+ 	padding: 0.2%; 
+    color: navy; 
+    background: silver; 
+    font-family: Sans-serif; }
+
+h3 { text-align: center;}
+
+label {
+  	display:block;
+  	padding: 0.5em 1em;
+    }
+label.line {
+  	display: inline;
+  	 }
+
+fieldset { 
+  	background: steelblue; 
+  	color:white; 
+  	margin-bottom: 1%; 
+  	padding:1% }
+
+legend { 
+  	background: navy;  
+  	color:white; 
+  	font-weight: bolder; 
+  	border: 1px solid }
+
+.Izquierda {
+  	float: left; 
+  	margin-right: 1%; 
+  	clear: left; 
+  	width: 44%  }
+
+.Derecha { 
+  	float: right;
+  	width: 44% }
+
+#fsCurso div.Izquierda {width: 60%}
+#fsCurso div.Derecha {width: 30%}
+
+button {  margin-left: 1.5%; }
+
+.aficiones{ margin-left: 2%;}
+
+span.label {
+	display: block;
+	float: left;
+	width: 50%;}
+
+#fsFecha span.label {
+	width:10%;
+	text-align: center;
+}
+
+input {
+	float: left;
+}

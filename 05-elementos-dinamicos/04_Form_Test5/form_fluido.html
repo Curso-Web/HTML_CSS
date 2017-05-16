@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario adaptable</title>
+	<meta name="description" content="Ejercicios del Curso CMF">
+	<meta name="author" content="Alejandro">
+  	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  	<link rel="stylesheet" href="css/form_fluido.css">
+  	<script src='js/form_test5.js'> </script>
+  	<script>
+  		window.onload = function () {
+  			// se establecen los manejadores de eventos   			
+			document.getElementById("Correo").onchange = function () {
+				actualizarColor(this); todoMinusculas();}; 
+  			document.getElementById("Clave1").onchange =  function () { 
+	    		actualizarColor(this);};
+  			document.getElementById("Clave2").onchange =  function () { 
+	    		actualizarColor(this);};
+  			document.getElementById("Nombre").onchange =  function () {
+  				actualizarColor(this); primeraMayuscula(this);};
+  			document.getElementById("Apellido1").onchange = function () { 
+  				actualizarColor(this); primeraMayuscula(this);};
+  			document.getElementById("Apellido2").onchange =  function () { 
+  				actualizarColor(this); primeraMayuscula(this);};
+  			document.getElementById("dia").onchange =  function () { 
+  				actualizarColor(this);};
+			document.getElementById("mes").onchange =  function () { 
+  				actualizarColor(this);};
+  			document.getElementById("anio").onchange =  function () { 
+  				actualizarColor(this);};
+  			document.getElementById("objeto").onclick =  function () { 
+  				asignaturas(this.value);};
+  			document.getElementById("sistemas").onclick =  function () { 
+  				asignaturas(this.value);};
+  			document.getElementById("web").onclick =  function () { 
+  				asignaturas(this.value);};
+  			document.getElementById("encuesta").onsubmit =  function () { 
+  				recopilaAficiones(); return validaDatos()};
+				/*	si validaDatos() devuelve falso no se ejecuta el submit 
+				 	debido al evento onsubmit. 
+					Debe ser true para el envío
+				*/
+			//se escribe la fecha de hoy
+			document.getElementById("fechaHoy").innerHTML = fechaActual("Madrid");	
+  		}; // Fin de window.onload
+  	</script>
+</head>
+
+ <body>
+ <!--body  onload="alert('Página cargada - OK');"-->
+ 
+  	<header>
+  		<h1>Proyecto final en JavaScript: Formulario</h1>
+	</header>
+  	<aside>
+  		<noscript>
+   	 		<p>
+     			<em>Si lees este mensaje es que tu navegador no 
+					ejecuta guiones JavaScript</em>
+    		</p>
+  		</noscript>
+	</aside>
+	<article>
+ 	<form name="encuesta" id="encuesta" action="java023.php" method="post"> 
+		<fieldset><legend>Datos del alumno</legend>
+		  	<fieldset class="Izquierda"><legend>Identificación</legend>
+		   		<label for="Correo">
+		   			<span class="label">Cuenta de correo</span>
+		    		<input name="Correo" id="Correo" title="Introduzca su direcci&oacute;n de correo" maxlength="50"  placeholder="cuenta@dominio.com" type="email">	
+		   		</label>
+		   		<label for="Clave1">
+		   			<span class="label">Introduzca su clave de acceso</span>
+		    		<input id="Clave1" maxlenght="10" name="Clave1" type="password" /> 
+		   		</label>
+		   		<label for="Clave2">
+		   			<span class="label">Repita la clave de acceso</span>
+		    		<input id="Clave2" maxlenght="10" name="Clave2" type="password" />
+		   		</label>
+		  	</fieldset>
+		  	<fieldset id="fsDatos" class="Derecha"><legend>Datos Personales</legend>
+		   		<label for="Nombre">
+		   			<span class="label">Nombre</span>
+			    	<input name="Nombre" id="Nombre" title="Introduzca su nombre" maxlength="40" />
+		   		</label>
+		    	<label for="Apellido1">
+		    		<span class="label">Primer apellido</span>
+			    	<input maxlength="30" name="Apellido1" id="Apellido1" />
+						<!--Retiramos disabled=true -->
+		   		</label>
+		    	<label for="Apellido2">
+		    		<span class="label">Segundo apellido</span>
+			    	<input maxlength="30" name="Apellido2" id="Apellido2" />
+						<!--Retiramos disabled=true-->
+		  		</label>
+		  		<fieldset id="fsFecha"><legend>Fecha de nacimiento</legend>
+		  			<p>
+			    		<label class="line" for="dia">
+			    			<span class="label">Día</span>
+				    		<input type="number" min="0" max="31"
+				    		name="dia" id="dia" value="0" />
+						</label>
+						<label class="line" for="mes">
+							<span class="label">Mes</span>
+				    		<input type="number" min="0" max="12" 
+				    		name="mes" id="mes" value="0" />
+						</label>
+						<label class="line" for="anio">
+							<span class="label">Año</span>
+			    			<input type="number" min="0" max="2014"
+			    			 name="anio" id="anio"	value="2000" />
+			    		</label>
+			    		
+		   			</p>
+		  		</fieldset>
+		 	</fieldset>
+		  	<fieldset id="fsCurso" class="Izquierda"><legend>Curso</legend>
+		  		<div class="Izquierda">
+			   		<label for="web">
+					 	<input type="radio" name="Curso" checked id="web" value="web"/>
+						Programador Web</label>
+			     	<label for="sistemas">
+				     	<input type="radio" name="Curso" id="sistemas" value="sistemas" />
+				     	Programador de Sistemas</label>	
+			  		<label for="objeto">
+				     	<input type="radio" name="Curso" id="objeto" value="objeto" />
+				     	Programador de Objetos</label>
+		  		</div>
+			     <div class="Derecha">
+				     <label>		     	
+				   		<select id="Materias" name="Materias" size="4" > 
+					    	<option value="1">Html</option>
+					    	<option value="2">CSS</option>
+					    	<option value="3">JavaScript</option>
+					    	<option value="4">PHP</option>
+				   		</select>
+				     </label>	
+			     </div>
+		    </fieldset>
+			<fieldset id="fsAficiones" class="Derecha"><legend>Aficiones</legend>
+			   	<div class="Izquierda">
+				   	<label for="Musica">
+				   		<input type="checkbox" id="Musica" name="Musica" />Música
+					</label>
+					<label for="Viajar">
+						<input class="aficiones" type="checkbox" id="Viajar" name="Viajar" />Viajar
+					 </label>
+					<label for="Pintura">
+						<input class="aficiones" type="checkbox" id="Pintura" name="Pintura" />Pintura </label>
+				    <label for="Foto">
+				    	<input class="aficiones" type="checkbox" id="Foto" name="Foto" />Fotografía
+				    </label>
+			   	</div>
+			   	<div class="Derecha">
+				   	<label for="Cine">
+				   		<input type="checkbox" id="Cine" name="Cine" />Cine
+				   	</label>
+				    <label for="Lectura">
+				    	<input class="aficiones" type="checkbox" id="Lectura" name="Lectura" />Lectura
+				    </label>
+				    <label for="Deporte">
+				    	<input class="aficiones" type="checkbox" id="Deporte" name="Deporte" />Deporte
+				    </label>
+					<label for="Baile">
+						<input class="aficiones" type="checkbox" id="Baile" name="Baile" />Baile
+					</label>
+				</div>
+			    <input type="hidden" id="aficion" name="aficion" />
+			</fieldset>
+		 	<fieldset id="fsBotones" class="Izquierda">
+			   	<button type="submit"><big>Enviar datos</big> </button>
+			    <button type="reset"><big>Restablecer valores</big></button>
+		 	</fieldset>
+		 	<fieldset id="fsFechaFinal" class="Izquierda">
+		 		<p id="fechaHoy"></p>
+		 	</fieldset>
+	 	</fieldset>
+ 	</form>
+ 	</article>
+	
+	<footer>
+		<p>
+			&copy; Copyright by Alejandro L. Cerezo
+		</p>
+	</footer>
+ </body>
+
+</html>
