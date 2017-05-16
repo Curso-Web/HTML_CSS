@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Menu con transiciones</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+        section {
+            margin: 1em;
+        }
+        nav.blk {
+            width: 60%;
+            min-width: 420px;
+            min-height: 50px;
+            max-height: 100px;
+            background-color: beige;
+            overflow: auto;
+        }
+            nav.blk ul {
+                list-style-type: none;
+                padding: 0px; /*Le quitamos el paddding por defecto*/
+                width: 100%; /*La lista se ajusta al 100% del nav*/
+            }
+            nav.blk li {
+                display: block;
+                float: left;
+                width: 25%; /*Cada uno de los 4 items ocupa el 25% del nav*/
+            }
+            nav.blk a {                
+                margin: auto 15%;
+                padding: 4%;
+                box-shadow: 0 3px 5px rgba(0,0,0,.5);
+                background-color: rgb(200,200,200);
+                border-color: rgb(200,200,200);
+                position: relative;
+            }
+
+        nav.ilb {
+            width: 60%;
+            min-width: 430px;
+            max-height: 80px;
+            background-color: beige;
+            overflow: auto;
+        }
+
+            nav.ilb ul {
+                list-style-type: none;
+                padding: 0px; /*Le quitamos el paddding por defecto*/
+                width: 100%;
+            }
+
+            nav.ilb li {
+                display: inline-block;
+                width: 24%;
+                /*pese a margin: 0%; padding: 0%; border: 0px; separa los elementos un mínimo */
+            }
+
+            nav.ilb a {
+                margin: auto 15%;
+                padding: 4%;
+                box-shadow: 0 3px 5px rgba(0,0,0,.5);
+                background-color: rgb(200,200,200);
+                border-color: rgb(200,200,200);
+                position: relative;
+            }
+
+	</style>
+</head>
+
+<body>
+	<h1>Menus</h1>
+    <section>
+        <h2>Menu con block / float</h2>
+        <nav class="blk">
+            <ul>
+                <li><a href="#">Opción A</a></li>
+                <li><a href="#">Opción B</a></li>
+                <li><a href="#">Opción C</a></li>
+                <li><a href="#">Opción C</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <h2>Menu con inline-block</h2>
+        <nav class="ilb">
+            <ul>
+                <li><a href="#">Opción A</a></li>
+                <li><a href="#">Opción B</a></li>
+                <li><a href="#">Opción C</a></li>
+                <li><a href="#">Opción C</a></li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>

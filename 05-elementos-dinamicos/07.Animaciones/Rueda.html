@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Animacion</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+	<style>
+        
+        @-webkit-keyframes rotate-skull {
+            0% {
+                left: 0px;
+                background-color: red;
+                -webkit-transform: rotate(0deg);
+            }
+            5% {
+                left: 5px;
+                -webkit-transform: rotate(15deg);
+            }
+            10% {
+                left: 10px;
+                -webkit-transform: rotate(30deg);
+            }
+            15% {
+                left: 15px;
+                -webkit-transform: rotate(45deg);
+            }
+            20% {
+                left: 20px;
+                background-color: orange;
+                -webkit-transform: rotate(60deg);
+            }
+            25% {
+                left: 25px;
+                -webkit-transform: rotate(75deg);
+            }
+            30% {
+                left: 30px;
+                background-color: orange;
+                -webkit-transform: rotate(90deg);
+            }
+
+            35% {
+                left: 35px;
+                -webkit-transform: rotate(80deg);
+            }
+
+            40% {
+                left: 80px;
+                background-color: yellow;
+            }
+
+            60% {
+                left: 120px;
+                background-color: green;
+            }
+
+            80% {
+                left: 160px;
+                background-color: blue;
+            }
+
+            100% {
+                left: 200px;
+                background-color: purple;
+            }
+        }
+
+	#magic {
+		position:relative;
+		width: 40%;
+		margin: auto;
+		text-align:center;
+		padding: 1em 1em;
+		border: 2px solid black;
+		border-radius: 10px;
+		animation: colores 5s infinite;
+		-webkit-animation:colores 5s linear infinite alternate; /* Safari and Chrome */
+		/* -webkit-animation-name: colors;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		*/
+	}		
+
+        #rotate {
+            position:absolute;
+		    top: 100px;
+		    left: 100px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 1em 1em;
+            border: 2px solid black;
+            border-radius: 10px;
+            animation: rotate-skull 5s infinite;
+            -webkit-animation: rotate-skull 5s infinite alternate; /* Safari and Chrome */
+                               
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Animacion</h1>
+	<div id="rotate">Rotación!</div>
+</body>
+</html>

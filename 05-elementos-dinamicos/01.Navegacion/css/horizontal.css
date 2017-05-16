@@ -1,0 +1,40 @@
+	#container{width:90%;
+				  margin-left: 5%;}
+	header {background-color:#FFA500;
+	        height:50px;}			
+	nav{background-color:#FFD700;
+	       height:60px;
+	       width:100%;
+	       float:left;}
+		#menu {background-color:#FF7700;
+		       height:75%;
+	      	 margin-top: 1%;
+		       margin-left: 2%;
+		       width:20%;
+		       clear:left;
+		       float:left;
+		       text-align:center;
+		       font-family: "Arial";
+		       font-size: 100%;
+		       font-weight: bold;}
+		.item {background-color:#FFA500;
+		       height:75%;
+		       margin-top: 1%;
+		       margin-left: 4%;
+		       width:15%;
+		       float:left;
+		       text-align:center;
+		       font-family: "Arial";
+		        font-size: 90%;}  
+		  #label {margin-top: 6%;}      
+	article {background-color:#EEEEEE;
+			   height:250px;
+			   width:100%;
+			   clear: left;
+			   float:left;}
+   p {padding-left: 5%}	
+	footer{background-color:#FFA500;
+			  clear:both;
+			  text-align:center;}
+	h1{margin-bottom:0;
+	   text-align:center;}

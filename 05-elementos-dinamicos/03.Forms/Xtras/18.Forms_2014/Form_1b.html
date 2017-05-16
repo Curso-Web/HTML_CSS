@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="ALCe65" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Primer ejercicio de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Hola Mundo!</title>
+	<style>
+		form {width: 80%;}
+		p {margin: 0px;}		
+		p.field {width: 50%;
+					float:left;
+					margin-right: 5%;
+					text-align: right;
+				}
+		p#coment {
+			padding-top: 85px;
+		}
+		ul.botones {list-style: none;
+					margin-left: 50%}
+		ul.botones li {display: inline;
+						padding: 0px 2%;
+					}
+		input, textarea {
+			width: 40%;
+		}
+		textarea{
+			height: 100px
+		}
+	</style>
+</head>
+
+
+<body>
+	<div>
+		<h1 title="Formulario 1">Prueba de formulario (Microfórum)</h1>
+	  
+	   <form method="post" action="mailto:alcerezo@microforum.es" enctype="text/plain">
+	   	
+	   	<fieldset>
+	   		<legend>Usuario</legend>
+			<label for="name">
+				<p class="field">Nombre: </p>
+				<input type="text" name="name">
+			</label>
+		    <label>
+		    	<p class="field">E-mail:</p>
+		    	<input type="email" name="email" maxlength="100" placeholder="Escriba su e-mail"></label>      
+		    <label>
+		    	<p class="field">Domicilio:</p> 
+		    	<input type="text" name="address" maxlength="200">
+		    </label>
+		    <label>
+		    	<p class="field">Ciudad:</p>
+		    	<input type="text" name="city">
+		    </label>
+		    <label>
+	      		<p class="field">Código Postal:</p> 
+	      		<input type="text" name="ZIP" size="10">
+		    </label>
+		    <label>
+		    	<p class="field">Ciudad:</p>
+		    	<input type="text" name="city">
+		    </label>
+	   	</fieldset>
+ 		<fieldset id="fs_coments">
+			<label for="coments" >
+				<p class="field" id="coment">Comentarios</p>
+				<textarea name="coments"> </textarea>
+			</label>
+		</fieldset>
+
+		<fieldset>		    
+		    <ul class="botones">
+		      	<li><input type="submit" value="Submit"></li>
+		      	<li><input type="reset" value="Clear"></li>	    	
+		    </ul>	 
+	   </fieldset>
+	   </form>
+	   
+
+	</div>
+	
+	
+</body>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="ALCe65" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Primer ejercicio de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<style>
+		form {width: 50%;}
+		div.field {width: 50%;
+					float:left}
+		div.datos {width: 50%;
+					float:left}
+	</style>
+</head>
+
+
+<body>
+	<div>
+		<h1 title="Formulario 1">Prueba de formulario (Microfórum)</h1>
+	  
+	   <form method="post" action="mailto:alcerezo@microforum.es" enctype="text/plain">
+	   	
+	   	<fieldset>
+	   		<legend>Usuario</legend>
+			<label for="name">
+				<div class="field">Nombre: </div>
+				<div class="datos"><input type="text" name="name" size="30"></div>
+			</label>
+		    <label>
+		    	<div class="field">E-mail:</div>
+		    	<input type="email" name="email" size="30" maxlength="100" placeholder="Escriba su e-mail"></label>      
+		    <label>
+		    	<div class="field">Domicilio:</div> 
+		    	<input type="text" name="address" size="30"maxlength="200">
+		    </label>
+		    	<p>Ciudad: <input type="text" name="city"></p> 
+	      	<p>Código Postal: <input type="text" name="ZIP" size="10"><p>
+	     </fieldset> 		
+		<fieldset id="fs_encuesta">
+			<label>Marca si es cierto:</label>
+			<ul>
+				<li>
+				<input class="post" type="checkbox" name="Q1" checked="checked">
+				<label class="post" for="Q1">Estoy contento con el curso</label>					
+				</li>
+			</ul>
+				<input class="post" type="checkbox" name="Q2" checked="checked">
+				<label class="post" for="Q2">Estoy contento con el profesor</label>
+				<label for="">Elige tu horario preferido</label>
+				<ul>
+					<li><input type="radio" name="category" value="gold" checked="checked">Mañana</li>
+					<li><input type="radio" name="category" value="silver">Tarde</li>
+					<li><input type="radio" name="category" value="bronze">Noche</li>
+				</ul>
+				<label for="">Indica tu formación</label>
+				<select name="select" size="1">
+				   <optgroup label="Universitario">
+				      <option>Doctor</option>
+				      <option>Licenciado</option>
+				      <option>Diplomado</option>
+				   </optgroup>
+				   <optgroup label="No universitario">
+				      <option>FP</option>
+				      <option>Bachillerato</option>
+				      <option>Otros</option>
+				   </optgroup>
+				</select>
+				<label for="">Puntua el curso entre 1 y 4</label>
+			</fieldset>   		
+	   	<fieldset>   		
+	      	<p><input type="submit" value="Submit"> &nbsp; <input type="reset" value="Clear"></p>
+	      	<p><input type="date"></p>
+	      	<p> </p>
+	      	<p><input type="month"></p>
+	      	<p> </p>
+	      	<p><input type="week"></p>
+	      	<p> </p>
+	      	<p><input type="datetime-local"></p>
+	      	<p> </p>
+	      	<p><input type="time"></p>
+	      	<p> </p>
+	   </fieldset>
+	   </form>
+	   
+	   <a href="mailto:alcerezo@microforum.es">Correo</a>
+	</div>
+	
+	
+</body>
+</html>

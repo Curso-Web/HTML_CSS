@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hola Mundo - JavaScript_001</title>
+	<meta name="description" content="Ejercicios del Curso CMF">
+	<meta name="author" content="Alejandro">
+  	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  	<link rel="stylesheet" href="css/javascript_001.css">
+  	<script>
+	//<!--
+
+		function validatePass(campo) {
+			var RegExPattern = /(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$/;
+			var errorMessage = 'Password Incorrecta.';
+			if ((campo.value.match(RegExPattern)) && (campo.value != '')) {
+				alert('Password Correcta');
+			} else {
+				alert(errorMessage);
+				campo.focus();
+			}
+		}
+	// -->
+	</script>
+</head>
+
+ <body>
+ <!--body  onload="alert('Página cargada - OK');"-->
+ 
+  	<header>
+  	<h1>Validación de una contraseña
+    </h1>
+	</header>
+  	<aside>
+  		<noscript>
+   	 		<p>
+     			<em>Si lees este mensaje es que tu navegador no 
+					ejecuta guiones JavaScript</em>
+    		</p>
+  		</noscript>
+	</aside>
+	<article>
+		<form action="#" method="post">
+			<p>
+				<input type="text" name="date" onblur="validatePass(this);">
+				<input name="button" type="button" value="Probar">
+				<br>
+				Entre 8 y 10 caracteres,<br>
+				por lo menos un digito y un alfanumérico,<br>
+				y no  puede contener caracteres espaciales
+			</p>
+		</form>
+	</article>
+	<footer>
+		<p>
+			&copy; Copyright  by Alejandro L. Cerezo
+		</p>
+	</footer>
+ </body>
+
+</html>

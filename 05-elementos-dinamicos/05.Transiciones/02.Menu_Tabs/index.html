@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Menu con pestañas</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+        section {
+            margin: 1em;
+        }
+
+        nav.tabs {
+            width: 80%;
+            min-width: 420px;
+            min-height: 50px;
+            max-height: 100px;
+            background-color: beige;
+            /* overflow: auto; */
+        }
+
+        nav.tabs a:link, nav.tabs a:visited, nav.tabs a:active {
+            text-decoration: none;
+            color: maroon;
+        } /* los links n cambian al ser utilizados (estilo menú) */
+
+        nav.tabs li.selected:hover a {
+            font-size: 1.4em;
+            text-decoration: underline;
+            color: black;
+        } /* efecto del hover en la pestaña selected */
+
+        nav.tabs a {
+            display: block;
+            transition: all 1s;
+        } /* pestañas, con su transición*/
+
+        nav.blk a {
+            margin: auto 15%;
+            padding: 4%;
+            box-shadow: 0 3px 5px rgba(0,0,0,.5);
+            background-color: rgb(200,200,200);
+            border-color: rgb(200,200,200);
+        } /* botones en otro ejemplo */
+
+            nav.tabs ul {
+                /*float: left;*/
+                width: 100%; /*La lista se ajusta al 100% del nav*/
+                list-style-type: none;
+                padding: 0; /*Le quitamos el paddding por defecto*/
+                margin: 0;
+                border-bottom: 1px solid gold;
+                margin-bottom: 10px;
+            } /*propiedades de la lista completa*/
+
+
+            nav.tabs li {
+                /*display: block;*/
+                float: left;
+                width: 25%; /*Cada uno de los 4 items ocupa el 25% del nav*/
+            } /*Propiedades de los items*/
+
+
+            ul.tabs .tab-label {
+                border: 1px solid gold;
+                margin: 0;
+                cursor: pointer;
+                padding-bottom: 2px;
+                padding-top: 2px;
+                background: white url("g1.jpg") repeat-x left bottom;
+                font-weight: normal;
+                text-align: center;
+                font-size: 1.1em;
+            } /* elemento titulo que enbloba los hiperenlaces*/
+
+            ul.tabs li.selected .tab-label {
+                position: relative;
+                border-bottom: none;
+                top: 1px;
+                padding-bottom: 4px;
+                padding-top: 5px;
+                border-top: 2px solid gold;
+                margin-top: -5px;
+                background-color: beige;
+                background: white url("g2.jpg") repeat-x left top;
+                font-weight: bold;
+            } /* elemento titulo que enbloba los hiperenlaces: Pestaña SELECCIONADA*/
+
+        #main {
+            border: 1px solid gold;
+            border-top: none;
+        }
+        article {
+            width: 80%;
+            margin: 2em 1em;
+            background-color: beige;
+        }
+	</style>
+</head>
+
+<body>
+	<h1>Menus</h1>
+    <section>
+        <h2>Menu con Pestañas</h2>
+        <nav class="tabs">
+            <ul class="tabs">
+                <li class="selected">
+                    <h3 class="tab-label"><a href="#">Tab 1</a></h3>
+                </li>
+                <li><h3 class="tab-label"><a href="products.html">Tab 2</a></h3></li>
+                <li><h3 class="tab-label"><a href="#">Tab 3</a></h3></li>
+                <li><h3 class="tab-label"><a href="#">Tab 4</a></h3></li>
+            </ul>            
+        </nav>
+        <article>
+            <p>Tab 1 content: Página de inicio.</p>
+        </article>
+    </section>
+
+</body>
+</html>

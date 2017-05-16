@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<title>Formularios</title>
+		
+		<meta name="keywords" content="html, html5, forms">
+		<meta name="application-name" content="Formularios">
+		<meta name="description" content="Formularios en HTML5">
+		<meta name="author" content="Silvia Rodríguez">
+		<meta name="generator" content="Aptana Studio 3">
+		<meta charset="UTF-8">
+
+		<link rel="shortcut icon" href="favicon.gif">
+		<link rel="stylesheet" href="default.css">
+	</head>
+
+	<body>
+		<h1>Formulario acerca del curso</h1>
+
+		<!--<form method="post" action="mailto:user@domain.com" enctype="text/plain">-->
+		<form>
+			<fieldset id="datos">
+				<legend>Datos personales</legend>
+				<label for="nombre">Nombre</label><input type="text" name="nombre">
+				<label for="apellidos">Apellidos</label><input type="text" name="apellidos">
+				<label for="ciudad">Ciudad</label><input type="text" name="ciudad">
+				<label for="provincia">Provincia</label><input type="text" name="provincia">
+			</fieldset>
+			
+			<fieldset id="encuesta">
+				<legend>Encuesta</legend>
+				<label for="q1">¿Estás contento con el curso?</label>
+				<p>
+					<input type="radio" name="q1" value="si" checked="checked">Sí
+					<input type="radio" name="q1" value="no">No
+				</p>
+				<label for="q2">¿Estás contento con el profesor?</label>
+				<p>
+					<input type="radio" name="q2" value="si" checked="checked">Sí
+					<input type="radio" name="q2" value="no">No
+				</p>
+				<label for="q3">Horario(s) preferido(s)</label>
+				<p>
+					<input type="checkbox" name="q3" value="m">Mañana
+					<input type="checkbox" name="q3" value="t">Tarde
+					<input type="checkbox" name="q3" value="n">Noche
+				</p>
+				<label for="q4">Selecciona un color</label>
+				<p>
+					<select name="q4">
+						<option value="red">Rojo</option>
+						<option value="green">Verde</option>
+						<option value="blue">Azul</option>
+						<option value="yellow">Amarillo</option>
+						<option value="orange">Naranja</option>
+						<option value="purple" selected="selected">Violeta</option>
+						<option value="pink">Rosa</option>
+						<option value="brown">Marrón</option>
+						<option value="black">Negro</option>
+						<option value="white">Blanco</option>
+						<option value="grey">Gris</option>
+						<option value="beige">Beige</option>
+					</select>
+				</p>
+				<label for="q5">Número de horas diarias (1-4)</label>
+				<p><input type="range" name="q5" min="1" max="4" step="1" value="1"></p>
+			</fieldset>
+			
+			<fieldset id="comentarios">
+				<label for="comentarios">Comentarios</label><textarea name="comentarios" placeholder="Deja aquí tus opiniones..."></textarea>
+			</fieldset>
+
+			<div id="botones">
+				<input type="submit" value="Enviar" class="boton">
+				<input type="reset" value="Borrar" class="boton">
+			</div>
+		</form>
+	</body>
+</html>

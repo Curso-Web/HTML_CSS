@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio Code" >
+	<meta charset="UTF-8">
+	<title>Menu con pestañas</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+        section {
+            margin: 1em;
+        }
+        nav.blk {
+            width: 60%;
+            min-width: 420px;
+            min-height: 50px;
+            max-height: 100px;
+            background-color: beige;
+            overflow: auto;
+        }
+            nav.blk ul {
+                list-style-type: none;
+                padding: 0px; /*Le quitamos el paddding por defecto*/
+                width: 100%; /*La lista se ajusta al 100% del nav*/
+            }
+            nav.blk li {
+                display: block;
+                float: left;
+                width: 25%; /*Cada uno de los 4 items ocupa el 25% del nav*/
+            }
+            nav.blk a {                
+                margin: auto 15%;
+                padding: 4%;
+                box-shadow: 0 3px 5px rgba(0,0,0,.5);
+                background-color: rgb(200,200,200);
+                border-color: rgb(200,200,200);
+                position: relative;
+            }
+
+        ul.tabs a:link, ul.tabs a:visited, ul.tabs a:active {
+            text-decoration: none;
+            color: maroon;
+        }
+
+        ul.tabs a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        ul.tabs a {
+            display: block;
+        }
+
+        ul.tabs {
+            float: left;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border-bottom: 1px solid gold;
+            margin-bottom: 10px;
+        }
+
+            ul.tabs li {
+                float: left;
+                width: 25%;
+                list-style-type: none;
+            }
+
+            ul.tabs .tab-label {
+                border: 1px solid gold;
+                margin: 0;
+                cursor: pointer;
+                padding-bottom: 2px;
+                padding-top: 2px;
+                background: white url("g1.jpg") repeat-x left bottom;
+                font-weight: normal;
+                text-align: center;
+                font-size: 1.1em;
+            }
+
+            ul.tabs li.selected .tab-label {
+                position: relative;
+                border-bottom: none;
+                top: 1px;
+                padding-bottom: 4px;
+                padding-top: 5px;
+                border-top: 2px solid gold;
+                margin-top: -5px;
+                background: white url("g2.jpg") repeat-x left top;
+                font-weight: bold;
+            }
+
+        #main {
+            border: 1px solid gold;
+            border-top: none;
+        }
+
+	</style>
+</head>
+
+<body>
+	<h1>Menus</h1>
+    <section>
+        <h2>Menu con Pestañas</h2>
+        <nav>
+            <ul class="tabs">
+                <li><h3 class="tab-label"><a href="index.html">Tab 1</a></h3></li>
+                <li class ="selected">
+                    <h3 class="tab-label"><a href="#">Tab 2</a></h3>
+                </li>
+                <li><h3 class="tab-label"><a href="#">Tab 3</a></h3></li>
+                <li><h3 class="tab-label"><a href="#">Tab 4</a></h3></li>
+            </ul>
+            <p>Tab 2 content: acerca de los productos de la empresa.</p>
+        </nav>
+    </section>
+
+</body>
+</html>

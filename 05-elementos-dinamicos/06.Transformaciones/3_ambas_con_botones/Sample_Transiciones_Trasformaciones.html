@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Transformaciones suaves</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		h1 {color:red;
+			-moz-transition: -moz-transform 10s ease-in-out 0.5s;
+			-webkit-transition: -webkit-transform 10s ease-in-out 0.5s;
+			-moz-transform: rotate(1deg);
+			-webkit-transform: rotate(1deg);
+		}
+	
+		#principal {
+			display: block;
+			width: 500px;
+			margin: 50px auto;
+			padding: 15px;
+			text-align: center;
+			border: 1px solid #999999;
+			background: #DDDDDD;
+			-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+			-webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+		}
+		#principal:hover{
+			-moz-transform: rotate(10deg);
+			-webkit-transform: rotate(10deg);
+		}		
+	</style>
+	
+</head>
+
+<body>
+	<h1>Ejemplo de transiciones + transformaciones</h1>
+	<p id="principal">Toca con el cursor</p>
+</body>
+</html>

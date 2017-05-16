@@ -1,0 +1,30 @@
+/******* Hoja de estilos ******/
+
+
+ html,body { margin: 0.3em; padding: 0.2em; 
+             color: navy; background: silver; 
+             font-family: Sans-serif; }
+
+
+ h3 { text-align: center;}
+
+
+ p { text-indent: 1em }
+
+ p#Fecha { float: right; margin-right: 1em; }
+
+
+  form p { text-indent: 0 }
+
+  fieldset { background: steelblue; color:white; margin-bottom: 1em; padding:1em }
+
+  legend { background: navy;  color:white; font-weight: bolder; border: 1px solid }
+
+  .Izquierda { float: left; margin-right: 1em; clear: left;width: 44%  }
+
+  .Derecha { float: right;width: 44% }
+
+
+  button {  margin-left: 1.5em; }
+
+  .aficiones{ margin-left: 2em;}
