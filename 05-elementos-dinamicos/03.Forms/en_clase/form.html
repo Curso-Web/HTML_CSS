@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <form method="post" action="" name="datos">
+            <fieldset>
+                <legend>Datos personales</legend>   
+                <p>
+                    <label for="first_name">Nombre </label>
+                    <input  type="text" 
+                            id="first_name" 
+                            name="first_name"
+                            placeholder="Escribe tu nombre"
+                            required>
+                
+                </p>
+                <p>
+                    <label for="family_name">Apellido</label>
+                    <input type="text" name="family_name" id="family_name"
+                    required>
+                </p>
+                <p>
+                    <label for="">Correo</label>
+                    <input type="email" name="email" value="@tajmar356.com">
+                </p>
+                <p>
+                    <label for="">Contraseña</label>
+                    <input type="password" name="pswd">
+                </p>
+                <label for="">Danos tu opinion</label>
+                <textarea rows="10" cols="25" name=opinion maxlength="400"></textarea>
+                <p>
+                    <input type="submit" name="send" value="Enviar">
+                </p>                
+            </fieldset>     
+        
+            <fieldset>
+                <legend>Opciones</legend>
+                <p>
+                    <input type="checkbox" name="acepto" id="aceptos">
+                    <label for="acepto">He leido y acepto las condiciones</label>
+                </p> 
+                <p>Elige un horario</p>
+                <ul style="list-style-type:none">
+                    <li><input type="radio" name="horario" value="M"><label for="">Mañana</label></li>
+                    <li><input type="radio" name="horario" value="T"><label for="">Tarde</label></li>
+                    <li><input type="radio" name="horario" value="N"><label for="">Noche</label></li>
+                </ul>
+                
+                <p>
+                    Selecciona un color
+                    <select name="color">
+                        <optgroup label="Primarios">
+                            <option value="r">Rojo</option>
+                            <option value="g">Verde</option>
+                            <option value=b"">Azul</option>
+                        </optgroup>
+                        <optgroup label="Secundarios">
+                            <option value="y">Amarillo</option>
+                            <option value="c">Cyan</option>
+                            <option value="m">Magenta</option>                            
+                        </optgroup>
+
+                    </select>
+                </p>
+                
+                <datalist id="listacolores">
+                        <option>Rojo</option>
+                        <option>Verde</option>
+                        <option>Azul</option>
+                        <option>Amarillo</option>
+                        <option>Cyan</option>
+                        <option>Magenta</option>                    
+                </datalist>
+
+                <input type="text" name="colores2" list="listacolores">
+
+
+            </fieldset>             
+        </form>        <form method="get" action="https://www.google.es/search" name="busca">
+            <fieldset>
+                <legend>Buscar</legend>
+                <input type="text" name="q" value="gatos">
+                <p>
+                    <input type="submit" name="send" value="Buscar">
+                </p>  
+            </fieldset>             
+        </form>
+
+    </body>
+</html>
