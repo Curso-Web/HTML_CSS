@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Transformaciones</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+	
+		section {
+			width: 40%;
+			height: 200px;
+			margin: 10px 5%;
+			padding-top: 30px;			
+			float: left;
+		}
+		div {
+			width: 200px;
+			height: 50px;
+			border: 2px solid black;
+		}
+		.Scale, .Rotacion, .Skew, .Traslacion {
+			font-size: 40px;
+		}
+		.Scale:hover{
+			background-color:red;
+			-moz-transform: scale(-0.5,-0.5);
+			-webkit-transform: scale(-0.5,-0.5);
+		}
+		.Rotacion:hover{
+			background-color:red;
+			-moz-transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+		}
+		.Skew:hover{
+			background-color:red;			
+			-moz-transform: skew(-20deg);
+			-webkit-transform: skew(-20deg);
+		}
+		.Traslacion:hover{
+			background-color:red;			
+			-moz-transform: translate(100px);
+			-webkit-transform: translate(100px);
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<h1>Ejemplo de la propiedad transform</h1>
+	<section>
+		<p>Escala</p>
+		<div class="Scale"> </div>
+	</section>
+	<section>
+		<p>Rotación</p>
+		<div class="Rotacion"> </div>
+	</section>
+	<section>
+		<p>Inclinación</p>
+		<div class="Skew"> </div>
+		
+	</section>
+	<section>
+		<p>Traslacion</p>
+		<div class="Traslacion"> </div>
+	</section>
+	
+	<section>
+		<p class="Scale">Escala</p>
+	</section>
+	<section>
+		<p class="Rotacion">Rotación</p>
+	</section>
+	<section>
+		<p class="Skew">Inclinación</p>
+	</section>
+	<section>
+		<p class="Traslacion">Traslacion</p>
+	</section>
+
+</body>
+</html>
