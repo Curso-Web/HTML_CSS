@@ -1,0 +1,16 @@
+<!--RSS-->
+
+<!--xml[version="1.0"+encodding="utf-8"]-->
+<xml version="1.0"+encodding="utf-8">
+
+<!--rss[version="2.0"]>channel>title+category+description-->
+
+    <rss version="2.0">
+        <channel>
+            <title></title>
+            <category></category>
+            <description></description>
+        </channel>
+    </rss>
+
+</xml>

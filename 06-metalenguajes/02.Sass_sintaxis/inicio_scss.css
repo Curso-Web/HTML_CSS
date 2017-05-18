@@ -1,0 +1,10 @@
+body {
+  width: 80%;
+  margin: auto; }
+  body article {
+    width: 50%;
+    background-color: bisque; }
+  body footer p {
+    font-size: 0.8 em; }
+
+/*# sourceMappingURL=inicio_scss.css.map */

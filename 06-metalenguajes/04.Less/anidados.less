@@ -1,0 +1,38 @@
+﻿/*Variables*/
+	@nice-blue: #5B83AD; /*rgb(108,148,190)*/
+    @rojo-ladrillo: #B43104; /*rgb(180,49,4)*/
+
+.div_basico(@ancho:50%) {
+		@alto: 100px;
+        width: @ancho;
+		border: 2px solid @nice-blue;
+		color: @rojo-ladrillo;
+		padding: 0.5em 1em;
+        margin: 1em auto;
+	}
+
+.borde_redondeado(@radio:10px) {
+    -webkit-border-radius: @radio;
+    -moz-border-radius: @radio;
+    border-radius: @radio;
+}
+
+header{
+    p {
+        color: @nice-blue;
+     } // Fin de los p incluidos en un Header
+}
+
+article {
+    div {
+          .div_basico();
+          .borde_redondeado()
+        } // Fin de los Div incluidos en un Article
+}
+
+aside {
+    div {
+          .div_basico(80%);
+          .borde_redondeado(30px)
+       } // Fin de los Div incluidos en un Aside
+}

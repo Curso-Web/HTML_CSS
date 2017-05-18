@@ -1,0 +1,53 @@
+
+/*Variables*/
+	@nice-blue: #5B83AD; /*rgb(108,148,190)*/
+    @rojo-ladrillo: #B43104; /*rgb(180,49,4)*/
+
+    header {
+		color: @nice-blue;
+        background-color: @rojo-ladrillo;
+	}
+
+/* Operaciones */
+		
+    @light-blue: @nice-blue + #311;
+
+    p {color: @light-blue; }
+
+/* Mixins() */
+
+		
+	.div_basico() {
+        @ancho:  50%; //Variables definidas en el mixin
+		@alto: 100px;
+		border: 2px solid @nice-blue;
+		color: @rojo-ladrillo;
+		padding: 0.5em 1em;
+        margin: 1em auto;
+	}
+
+    .borde_redondeado(@radio:10px){
+        -webkit-border-radius: @radio;
+        -moz-border-radius: @radio;
+        border-radius: @radio;
+    }
+
+	.caller {
+  	.div_basico();
+  	width:  @ancho;
+  	height: @alto;
+	}
+
+	.caller2 {
+  	    .div_basico();
+        .borde_redondeado();
+  	}
+
+    .caller3 {
+  	    .div_basico();
+        .borde_redondeado(30px);
+  	}
+
+
+  	footer {margin-top: 3em;
+			border-top: 2px solid silver;}
