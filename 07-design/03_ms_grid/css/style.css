@@ -1,0 +1,11 @@
+section.grid > div {
+     display: -ms-grid;
+    -ms-grid-rows: 1fr 2fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+}
+section.grid  > div > div {border: 1px solid gray;}
+section.grid  > div > div:nth-child(2) {-ms-grid-row: 1; -ms-grid-column: 2; }
+section.grid  > div > div:nth-child(3) {-ms-grid-row: 1; -ms-grid-column: 3; }
+section.grid  > div > div:nth-child(4) {-ms-grid-row: 2; -ms-grid-column: 1; }
+section.grid  > div > div:nth-child(5) {-ms-grid-row: 2; -ms-grid-column: 2;}
+section.grid  > div > div:nth-child(6) {-ms-grid-row: 2; -ms-grid-column: 3;}

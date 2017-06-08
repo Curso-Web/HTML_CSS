@@ -1,0 +1,34 @@
+*, *::before, *::after, *:before, *:after { 
+    box-sizing : border-box;
+    }
+
+header {
+    background-color: maroon;
+    color : papayawhip;
+}
+
+nav {
+    border: 1px solid maroon;
+    overflow: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+footer {
+    border-top: 1px solid maroon;
+    width: 100%;
+}
+
+footer address, footer small {
+    width: 100%;
+    text-align: center;
+}

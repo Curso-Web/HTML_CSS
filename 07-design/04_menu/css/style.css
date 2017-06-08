@@ -1,0 +1,45 @@
+*, *::before, *::after, *:before, *:after { 
+    box-sizing : border-box;
+    }
+
+body {
+    width: 90%;
+    margin: 2em auto;
+}
+
+header {
+    background-color: maroon;
+    color : papayawhip;
+    width : 100%;
+    /* Hace que el tamaño del header englobe los márgenes del h1*/
+    /*float:left;   
+    height: 3em;*/
+    padding-left: 1em;
+    margin: 2em 0em;
+}
+
+body>section, body>div {
+    float: left;
+}
+
+body>section {
+    width: 69%;
+    margin-right: 2%;
+    padding: 2em;
+}
+
+body>div {
+    width: 29%;
+    padding: 1em;
+}
+
+.clear_fix {
+    clear: both;
+}
+
+footer {
+    border-top: 1px solid maroon;
+    padding: 2em 1em;
+    width: 100%;
+    text-align: center;
+}
