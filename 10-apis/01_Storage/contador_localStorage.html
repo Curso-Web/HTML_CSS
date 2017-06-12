@@ -1,0 +1,113 @@
+﻿<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookies en JavaScript 01</title>
+	<meta name="description" content="Ejercicios del Curso CMF">
+	<meta name="author" content="Alejandro">
+    <link rel="shortcut icon" href="fav_icon.png">
+  	<link href="../../_bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="default.css">
+     <style>
+         .estado {
+             margin-top: 1em;
+         }
+     </style>
+  	<script type="text/javascript" href="../../_bootstrap/js/bootstrap.js"></script>
+  	<script type="text/javascript">
+
+  		function mostrarContador (contador) {
+  			var oVentana = window.open("","", "top=200, left=300, width=300, height=400, status=yes, menubar=yes scrollbars=yes");
+  			// el segundo parámetro es _blank (único valor con sentido)
+  			// status=yes, menubar=yes ¿sin efecto en Chrome?
+  			// resizable=yes solo IE 
+  			// toolbar=yes solo IE y Firefos 
+  			oVentana.document.write("<p>Numero de visitas a la página: " + contador + "</p>");
+  		
+  		}
+
+		function main () {
+		    document.getElementById("btn_1").onclick = function () {
+		        localStorage.numeroVisitas = 1;
+		        document.getElementById("estado").innerHTML = "Contador ACTIVO"
+		    }; // iniciarContador
+
+		    document.getElementById("btn_2").onclick = function () {
+		        localStorage.numeroVisitas = 0;
+		        document.getElementById("estado").innerHTML = "Contador INACTIVO"
+		    }; // vaciarContador
+
+			document.getElementById("btn_3").onclick = function () {
+			    mostrarContador(localStorage.numeroVisitas);
+			} // mostrarContador;
+
+			document.getElementById("btn_4").onclick = function () {
+			    location.reload()
+			}; // recargarPagina
+			
+		    //lo que hacia getCookie();
+			if (localStorage.numeroVisitas > 0) {
+			    localStorage.numeroVisitas++;
+			    document.getElementById("estado").innerHTML = "Contador ACTIVO"
+			}
+			else {
+			    document.getElementById("estado").innerHTML = "Contador INACTIVO"
+			}
+		    //actualizarContador
+
+		}  	
+
+	  	document.addEventListener("DOMContentLoaded", main, false);	
+		// metodo de DOM nivel 2  que indica al agente de usuario que permanezca atento:
+		// evento: en este caso la carga completa de la página
+		// función a lanzar: en este caso main
+		// orden del flujo de eventos: false salta la fase de captura
+		// el equivalente del DOM nivel 1 sería
+		// window.onload = main
+
+  	</script>
+</head>
+<body>
+	<header>
+		<h1>Ejemplos del uso de localStorage</h1>
+	</header>	
+	<section class="container.fluid">
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2">
+				<p>Inicia/Borrar el contador de visitas</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<button id="btn_1" type="button" class="btn btn-primary">Iniciar contador</button>
+				<button id="btn_2" type="button" class="btn btn-primary">Vaciar contador</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2">
+				<p>Mostrar número de visitas a la página</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<button id="btn_3" type="button" class="btn btn-primary">Mostrar</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 col-md-offset-2">
+				<p>Recargar la página</p>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<button id="btn_4" type="button" class="btn btn-primary">Recargar </button>
+			</div>
+		</div>
+
+        <div class="row estado">
+            <div class="col-md-2 col-md-offset-2">
+                <p>Estado del contador</p>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <p id="estado">....</p>
+            </div>
+        </div>
+
+	</section>
+</body>

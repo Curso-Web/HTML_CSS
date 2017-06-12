@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Bluefish 2.2.4" >
+	<meta charset="UTF-8">
+	<title>Canciones</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+	<style>
+		header, section {
+			width: 50%;
+			margin: 2px auto;
+		}
+		h1 {text-align: center;}
+		ul {list-style-type: none;
+			margin: 0px;
+			padding: 0px;}
+		li, audio, p {margin: 10px 10px;
+			padding: 5px 5%;}
+		li	{
+			border-radius: 5px 5px;
+			background-color: orange;
+			color: blue} 
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('a').click(function (oPepito) {
+				oPepito.preventDefault();
+				var cancion = $(this).attr('href');
+				$('p').html("Canción seleccionada: " + cancion);
+				$('audio').attr('src', cancion);
+			});	// final de click	
+		}); // final de ready()
+	</script>
+</head>
+
+<body>
+	<header>
+		<h1>Audio: Canciones</h1>	
+	</header>
+	<section>	
+		<ul>
+			<li title="Lynyrd Skynyrd"><a href="Audio/Sweet_Home_Alabama.mp3">Sweet Home Alabama</a></li>
+			<li title="Janis Joplin"><a href="Audio/Cry_Baby.mp3">Cry Babe</a></li>
+		</ul>
+		<div>
+			<audio src="" controls> </audio>	
+		</div>	
+		<p>Seleccione una canción</p>
+	</section>
+</body>
+</html>

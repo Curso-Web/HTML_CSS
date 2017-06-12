@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta name="keywords" content="web, learning, html5, css3">
+	<meta name="author" content="Alejandro" >
+	<meta name="application-name" content="…">
+	<meta name="description" content="Ejercicios de HTML5">
+	<meta name="generator" content="Visual Studio" >
+	<meta charset="UTF-8">
+	<title>Geolocalización - Mapas</title>
+	<link rel="stylesheet" href="default.css">
+	<link rel="shortcut icon" href="fav_icon.png">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+
+        function mapaFijo() {
+
+            // mapa sin geolocalización:
+            // ejemplo básico del uso del API de google.maps
+
+            var domMapa = document.getElementById("otroMapa");
+            var latitude = 40;
+            var longitude = -6;
+            var options = {
+                position: new google.maps.LatLng(latitude, longitude),
+                title: "Tu localización",
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(domMapa, options);
+            map.setCenter(new google.maps.LatLng(latitude, longitude));
+
+        }
+
+
+        function mapaLoc() {
+
+            // mapa con geolocalización
+            // ejemplo básico del uso del nuevo API de HTML5
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (pos) {
+                    var domMapa = document.getElementById("miMapa");
+                    var latitude = pos.coords.latitude;
+                    var longitude = pos.coords.longitude;
+                    var options = {
+                        position: new google.maps.LatLng(latitude, longitude),
+                        title: "Tu localización",
+                        zoom: 19,
+                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                    }; // fin de options
+                    var map = new google.maps.Map(domMapa, options);
+                    var marker = new google.maps.Marker(options);
+                    var circle = new google.maps.Circle({
+                        map: map, radius: pos.coords.accuracy
+                    }); // fin de circle
+                    circle.bindTo('center', marker, 'position');
+                    marker.setMap(map);
+                    map.setCenter(new google.maps.LatLng(latitude, longitude));
+                },
+                function (error) {
+                    console.log(error.message);
+                },
+                {enableHighAccuracy : true}); // fin de getCurrentPosition
+            }
+        }
+
+        window.addEventListener("load", function () { mapaFijo(); mapaLoc();})
+    </script>
+</head>
+
+<body>
+	<h1>Mapa del punto en el que te encuentras</h1>
+    <div id="otroMapa" class="map"></div>
+    <div id="miMapa" class="map"></div>
+</body>
+</html>
