@@ -1,0 +1,48 @@
+header {
+        margin-top: 1em;
+		color: maroon;
+}
+
+	header p { /*Lineas de subtítulo*/
+		margin-top: -0.5em;
+		font-size: 1.5em;
+	}
+
+footer {
+ 	margin-top:  2em;
+ 	border-top: solid 1px silver;
+ 	color: maroon;
+}
+ 	footer p {
+ 		margin: 0.2em;
+ 	}
+figure{
+   padding: 2em;
+ }
+
+.samples {background-color: beige;
+        border: 1px solid silver;
+        box-shadow: 2px 2px 2px 2px sienna;}
+
+.container {margin-bottom: 1em;}
+.estrecha {padding: 1em 3em;}
+.muyestrecha {padding: 1em 6em;}
+.conborde {border: 1px solid black;}
+
+.colorfondo { /*Añade altura, simulando el contenido del artículo*/
+    background-color: beige;
+}
+
+.separate-rows { /*Añade margen encima & debajo */
+    margin-top: 2em;
+    margin-bottom: 2em;
+    }
+
+div.container-separate-rows div.row {
+    margin-bottom: 2em;
+    }
+
+article.altura { /*Añade altura, simulando el contenido del artículo*/
+    height: 200px;
+    overflow: auto;);
+}

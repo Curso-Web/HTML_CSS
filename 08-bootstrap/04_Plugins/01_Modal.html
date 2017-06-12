@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, 
+									user-scalable=no, 
+									initial-scale=1.0, 
+									maximum-scale=1.0, 
+									minimum-scale=1.0">
+	<title>Bootstrap: Modal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="fav_icon.png">
+
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+   	<div class="container">
+
+    	<div class="row">
+    		<header class="col-xs-12 well">
+    			<h1>"Ventanas modales"</h1>
+    		</header>
+    	</div> <!-- Fin de fila --> 
+	
+    	<div class="row">
+			<article>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				  Más información
+				</button>
+
+				<div class="modal fade" id="myModal">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <!-- Cabecera -->
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        X</button>
+				        <h4 class="modal-title">Ventanas modales</h4>
+				      </div>
+				      <!-- Cuerpo -->
+				      <div class="modal-body">
+				        <p>Como se puede ver, un Modal es un mecanismo emergente que permite mostrar información al usuario</p>
+				        <p>Igualmente es posible incluir entrada de datos y disponer de elemntos que permitan salvarlos o cerrar la ventana en cualquier caso</p>
+				      </div>
+				      <!-- Pie -->				      
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary">Salvar cambios</button>
+				      </div>
+				    </div><!-- /.modal-content -->
+				  </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</article>
+        </div> <!-- Fin de fila -->  
+
+    </div> <!-- Fin del container-->    
+
+	<div class="container">
+    	<footer class="row">
+	        <address class="col-sm-12 text-center">
+	          <p>Aleajndro L. Cerezo</p>
+	          <p>Cle Formacion</p>
+	          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+	        </address>
+  		</footer>       
+	</div> <!-- Fin del container -->
+
+	<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

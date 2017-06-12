@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro">
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navegacion: Menús</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body class="container">
+
+    <header class="row well">
+        <h1>Navegación en Bootstrap</h1>
+    </header>
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <p>En todos los casos se aplican clases a la lista (ul) que da lugar al menu;<br>
+            no se aplican clases en el contenedor de la lista, en este caso un nav.
+            </p>
+        </div>
+
+
+        <div class="col-sm-12">
+            <h2>Menú básico</h2>
+            <p>Tipos "pildoras" (pills) y "pestañas" (tabs)</p>            
+        </div>
+    
+        <nav class="col-sm-12">
+            <ul class="nav nav-pills">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+
+        <nav class="col-sm-12">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+
+        <div class="col-sm-12">
+            <h2>Menú justificado</h2>
+            <p>En la lista (ul) se añade la clase nav-justyfied<br>
+            En este caso cambia el comportamiento al reducir el tamaño de la pantalla</p>
+
+        </div>
+
+        <nav class="col-sm-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+
+        <nav class="col-sm-12">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+
+        <div class="col-sm-12">
+            <h2>Menú con submenus</h2>
+            <p>Añadiendo un desplegable en una de las opciones</p>
+        </div>
+
+        <nav class="col-sm-12">
+            <ul class="nav nav-pills">
+              <li><a href="#">Inicio</a></li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Proyectos<span class="caret"></span></a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Juegos HTML</a></li>
+                    <li><a href="#">Elementos SVG</a></li>
+                    <li><a href="#">Apps Windows 8</a></li>
+                  </ul>
+              </li>
+
+              <li><a href="#">Recursos</a></li>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+
+        
+        <div class="col-sm-12">
+            <h2>Menú con submenus (accesibilidad)</h2>
+            <p>Añadiendo un desplegable y accesible en una de las opciones</p>
+        </div>
+
+        <nav class="col-sm-12">
+            <ul class="nav nav-pills ">
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Proyecto">
+                        Proyectos<span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="Proyecto" role="menu">
+                        <li role="presentation"><a role="menuitem" href="#">Juegos HTML</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">Elementos SVG</a></li>
+                        <li role="presentation"><a role="menuitem" href="#">Apps Windows 8</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+        
+    </div> <!-- Fin del div.row-->
+
+    <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+    </footer>  <!-- Fin del .row-->     
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</body>  <!-- Fin del container--> 

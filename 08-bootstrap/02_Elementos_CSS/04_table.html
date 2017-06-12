@@ -1,0 +1,104 @@
+﻿<html lang="en">
+<head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tablas en Bootstrap</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fav_icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!--  tall-rows"-->
+        <div class="row">
+            <header class="col-xs-10 col-xs-offset-1 well">
+                <h1>Tablas en Bootstrap</h1>
+            </header>
+        </div>
+
+        <div class="row">
+            <header class="col-xs-10 col-xs-offset-1">
+                <h2>Tabla "responsive"</h2>
+            </header>
+        </div>
+
+        <div class="row table-responsive col-sm-10 col-sm-offset-1">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="colgroup rowgroup" colspan="2" rowspan="2">Resultados de la encuesta</th>
+                            <th scope="colgroup" colspan="3">Edad</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">12&nbsp;a&nbsp;25</th>
+                            <th scope="col">26&nbsp;a&nbsp;40</th>
+                            <th scope="col">Más&nbsp;de&nbsp;40</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" rowspan="3">
+                                ¿Cual es tu destino preferido<br>
+                                para las vacaciones?</th>
+                            <th scope="row">Disney-Paris</th>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">El Caribe</th>
+                            <td>25%</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Europa</th>
+                            <td>25%</td>
+                            <td>25%</td>
+                            <td>50%</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+        </div>
+
+        <div class="row">
+            <aside class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    <figure class="col-xs-4">
+                        <img class="img-responsive img-circle" src="images/Disney.jpg" />
+                    </figure>
+                    <figure class="col-xs-4">
+                        <img class="img-responsive img-circle" src="images/Caribe3.jpeg" />
+                    </figure>
+                    <figure class="col-xs-4">
+                        <img class="img-responsive img-circle" src="images/Europe.jpg" />
+                    </figure>
+                </div>
+            </aside>
+        </div>
+    </div> <!-- Fin del container -->
+
+    <div class="container">
+      <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+      </footer>       
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elementos de texto: titulares, párrafos, alineación y otros</title>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fav_icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+    <div class="container container-separate-rows">
+
+      <div class="row">
+        <header class="col-xs-12 well">
+          <h1>Estilos de los textos</h1>
+          <p>en Bootstrap</p>
+        </header>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Ejemplos de Titulares</p>
+        </div>
+      </div>
+
+      <div class="row separate-rows">
+        <div class="col-xs-10 col-xs-offset-1 samples">
+          <h1>Titular nivel 1</h1>
+          <h2>Titular nivel 2</h2>
+          <h3>Titular nivel 3</h3>
+          <h4>Titular nivel 4</h4>
+          <h5>Titular nivel 5</h5>
+          <h6>Titular nivel 6</h6>
+          <h4>Titular nivel 4 <small>con texto secundario</small></h4>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Ejemplo de parrafo</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 samples">
+          <p><strong>Párrafo estándar</strong>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, fuga dolorum molestias ex vitae adipisci rerum tempora est error reprehenderit excepturi repellendus facere iusto repellat atque. Eos, porro ad adipisci.</p>
+
+          <p class="lead">Párrafo destacado con <code>.lead</code>: <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Ejemplos de citas (bloquoete)</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 samples">
+          <blockquote>
+            <p>Texto de un blockpuote estándar</p>
+            <footer><cite>Indicando su procedencia en un footer</cite></footer>
+          </blockquote>
+
+          <blockquote class="blockquote-reverse">
+            <p>Texto destacado con blockquote con alineación invertida con <code>.blockquote-reverse</code></p>
+            <footer><cite>Indicando su procedencia en un footer</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Ejemplos de parrafos realineados</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 samples">
+          <p class="text-left">Alineamiento a la izquierda con <code>.text-left</code>.</p>
+          <p class="text-right">Alineamiento a la derecha con <code>.text-right</code></p>
+          <p class="text-center">Alineamiento centrado con <code>.text-center</code></p>
+          <p class="text-justify">E incluso alineamiento justificado mediante la clase <code>.text-justify</code> que requiere de textos más extensos para poder apreciarse correctamente su efecto sobre un párrafo.</p>          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Ejemplos de Formato propio para direcciones</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 samples">
+          <address> <strong>Marcos González</strong><br>
+                   Calle vivienda, 1 2º<br>
+                   Ciudad, CP008<br>
+                   <abbr title="teléfono">tfno.</abbr> (+34) 999 888 777</address>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+          <p>Otros ejemplos "técnicos" incluyendo textos preformateados </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 samples">
+          <p>Tiene soporte para <abbr title="esto es una explicación">abreviaturas</abbr> mediante la etiqueta <pre>&lt;abbr&gt;</pre></p>          
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 samples">
+          <p>E incluso un formato para representar entradas de teclado del usuario como <kbd>Ctrl+E</kbd> mediante la etiqueta <pre>&lt;kbd&gt;</pre></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+      </footer>       
+    </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

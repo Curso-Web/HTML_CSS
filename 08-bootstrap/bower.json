@@ -1,0 +1,32 @@
+{
+  "name": "04_Bootstrap",
+  "authors": [
+    "Alejandro Cerezo <alce65@hotmail.es>"
+  ],
+  "description": "Ejemplos con Bootstrap",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "html5",
+    "css3",
+    "bootstrap",
+    "web",
+    "design"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elementos de texto: listas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fav_icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+
+       <div class="row">
+        <header class="col-xs-12 well">
+          <h1>Estilos de las listas</h1>
+          <p>en Bootstrap</p>
+        </header>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h4>Listas simples: ordenadas o sin orden.</h4>        
+          <ol>
+            <li>Elemento primero.</li>
+            <li>Elemento segundo.
+              <ol>
+                <li>Subelemento primero.</li>
+                <li>Subelemento segundo.</li>
+              </ol>
+            </li>
+            <li>Elemento tercero.</li>
+          </ol>
+
+          <ul>
+            <li>Elemento primero.</li>
+            <li>Elemento segundo.
+              <ul>
+                <li>Subelemento primero.</li>
+                <li>Subelemento segundo.</li>
+              </ul>
+            </li>
+            <li>Elemento tercero.</li>
+          </ul>
+
+           <h4>Listas sin estilo con <code>.list-unstyled</code>.</h4>        
+            <ol class="list-unstyled">
+              <li>Elemento primero.</li>
+              <li>Elemento segundo.
+                <ol>
+                  <li>Subelemento primero.</li>
+                  <li>Subelemento segundo.</li>
+                </ol>
+              </li>
+              <li>Elemento tercero.</li>
+            </ol>
+
+            <h4>Listas en línea con <code>.list-inline</code>.</h4>        
+            <ol class="list-inline">
+              <li>Elemento primero.</li>
+              <li>Elemento segundo.</li>
+              <li>Elemento tercero.</li>
+            </ol>
+
+            <h4>Listas de descripción verticales u horizontales (con <code>.dl-horizontal</code>).</h4>        
+            <dl>
+              <dt>Elemento primero.</dt>
+              <dd>Definición primera.</dd>
+              <dt>Elemento segundo.</dt>
+              <dd>Definición segunda.</dd>
+              <dt>Elemento tercero.</dt>
+              <dd>Definición tercera.</dd>
+            </dl>
+              
+            <dl class="dl-horizontal">
+              <dt>Elemento primero.</dt>
+              <dd>Definición primera.</dd>
+              <dt>Elemento segundo.</dt>
+              <dd>Definición segunda.</dd>
+              <dt>Elemento tercero.</dt>
+              <dd>Definición tercera.</dd>
+            </dl>
+
+        </div>
+      </div>
+    </div> <!-- Fin del container-->
+    
+    <div class="container">
+      <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+      </footer>       
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

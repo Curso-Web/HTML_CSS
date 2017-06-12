@@ -1,0 +1,47 @@
+/* CSS Document */
+body {margin:2em 4em;}
+header.main {
+	color:#941a1a;
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;
+	margin-bottom: 2em;
+	}
+header.main2 {
+	text-align: center;
+	color:#eeeeee;
+	background-color: #941a1a;
+	margin: 0em 1em 2em;
+	}	
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom:2em;
+	}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+	}
+article>aside, section {
+	margin:0em 0em 2em;
+	}
+.slide{
+	padding: 2em;
+	border: 1px double black;
+	border-radius: 12px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#fcfcfc), to(#bfbfbf), color-stop(3%, #f7f7f7), color-stop(12%, #f2f2f2), color-stop(90%, #d9d9d9));
+	background-image: -webkit-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+	background-image: -moz-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+	background-image: -o-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+	background-image: -ms-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+	background-image: linear-gradient(to bottom, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+	-webkit-box-shadow: 8px 4px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 8px 4px 5px rgba(0,0,0,0.75);
+	box-shadow: 8px 4px 5px rgba(0,0,0,0.75);
+	}
+.tema {
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial, sans-serif;
+	text-decoration:underline;
+	font-weight:bold;
+	
+}
+
+

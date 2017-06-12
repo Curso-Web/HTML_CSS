@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro">
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desplegables o dropdowns</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+        
+    <div class="container"> 
+
+    <div class="row">
+      <header class="col-xs-12 well">
+        <h1>Desplegables</h1>
+      </header>
+    </div>
+
+		<div class="row">
+      <div class="col-xs-6">  
+        <h3>Desplegable básico</h3>
+
+<!--
+          Contenedor (div) de la clase dropdown (o btn-group (*)) que incluye
+
+          - un boton (button) de la clase dropdown-toggle y
+          con el atributo data-toggle="dropdown", que le confiere funcionalidad gracias a JS.
+          Suele llevar un <span class="caret"></span> para que muestre el icono de desplegable
+
+          - una lista de opciones (ul) de la clase dropdown-menu, 
+          en la que cada uno de los items es un hiperenlace (a)
+
+          (*) Esto permite integrar el boton desplegable en un grupo de botonos
+
+-->
+
+        
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" data-toggle="dropdown">
+            Opciones <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class=""><a href="#">Opción 1</a></li>
+            <li class=""><a href="#">Opción 2</a></li>
+            <li class=""><a href="#">Opción 3</a></li>
+            <li class=""><a href="#">Opción 4</a></li>
+          </ul>
+          
+
+        </div>
+
+      </div>
+
+
+			<div class="col-xs-6">  
+				<h3>Desplegable con agrupaciones</h3>
+
+				<div class="dropdown">
+					<button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+					Menú
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" class="dropdown-header">Principales</li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Opción A</a></li>
+						<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Opción B</a></li>
+            <li role="presentation" class="dropdown-header">Secundarias</li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Opción C</a></li>
+            <li role="presentation" class="divider"></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Otra opción</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+    </div>    
+
+    <div class="container">
+          <footer class="row">
+            <address class="col-sm-12 text-center">
+              <p>Aleajndro L. Cerezo</p>
+              <p>Cle Formacion</p>
+              <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+            </address>
+          </footer>       
+    </div> <!-- Fin del container -->  
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+   
+  </body>
+</html>

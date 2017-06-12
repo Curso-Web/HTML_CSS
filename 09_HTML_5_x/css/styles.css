@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto';
+  color: #333;
+  font-size: 1.1em;
+}
+
+section, .panda {
+  max-width: 500px;
+}
+
+.panda img {
+    width: 100%
+}
+
+details {
+  background: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fav_icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+        
+    <div class="container">
+      <div class="row">
+        <header class="col-xs-12 well">
+          <h1>Formulario básico</h1>
+          <p>en Bootstrap</p>
+        </header>        
+      </div>
+
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">          
+            
+            <form role="form" action="">
+              <div class="form-group">
+                <label>ID</label>
+                <p class="form-control-static">12</p>
+              </div>
+              
+              <div class="form-group">
+                <label for="username">Nombre de usuario</label>
+                <input id="username" type="text" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input id="email" type="text" class="form-control">
+              </div>
+
+              <span class="clearfix"></span>
+
+              <div class="form-group">
+                <label for="passwd">Contraseña</label>
+                <input id="passwd" type="password" class="form-control">      
+              </div>
+
+              <div class="form-group">
+                <label for="detalle">Detalle</label>
+                <textarea id="detalle" class="form-control" rows="10"></textarea>
+              </div>
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="item-a" value="a"> Opción A
+                </label>              
+              </div>   
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="item-b" value="b"> Opción B
+                </label>              
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="item-c" value="c"> Opción C
+                </label>
+              </div>
+              
+              <div class="radio">
+                <label>
+                  <input type="radio" name="opcionNumero" id="opcionPrimera" value="1" checked>
+                  Opción primera
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="opcionNumero" id="opcionSegunda" value="2">
+                  Opción segunda
+                </label>
+              </div>
+
+              <select class="form-control">
+                <option>Rojo</option>
+                <option>Amarillo</option>
+                <option>Azul</option>
+                <option>Verde</option>
+                <option>Violeta</option>
+              </select>
+            </form>
+
+          </div>
+        </div> <!-- Fin del container -->
+    
+    <div class="container">
+      <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+      </footer>       
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

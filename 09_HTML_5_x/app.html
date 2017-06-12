@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Novedades HTML 5.1 (5.2)</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>   
+
+<nav>
+    <h2>Ejemplo de la etiqueta menu (aun no soportada)</h2>
+    <menu type = "list" id="popup-menu">
+        <menuitem type="checkbox" checked="true">Checkbox</menuitem>
+        <menuitem type="command" label="Command" onclick="alert('Hey!')">Checkbox</menuitem>
+        <menuitem type="radio" name="group1" checked="true">Radio button 1</menuitem>
+        <menuitem type="radio" name="group1">Radio button 2</menuitem>
+        <menuitem type="checkbox" disabled>Disabled menu item</menuitem>
+    </menu>
+</nav>
+
+<section>
+  <h2>Red panda</h2>
+  <p>
+    The red panda's local names differ from place to place. The Lepcha people call it sak nam. In Nepal, the species is called bhalu biralo (bear-cat) and habre.
+  </p>
+  <details>
+    <summary>
+      Distribution and habitat
+    </summary>
+    <p>
+    The red panda is endemic to the temperate forests of the Himalayas, and ranges from the foothills of western Nepal to China in the east. Its easternmost limit is the Qinling Mountains of the Shaanxi Province in China. Its range includes southern Tibet, Sikkim and Assam in India, Bhutan, the northern mountains of Burma, and in south-western China, in the Hengduan Mountains of Sichuan and the Gongshan Mountains in Yunnan.
+    </p>
+  </details>
+  <details>
+    <summary>
+      Curious facts
+    </summary>
+    <p>
+    The red panda's local names differ from place to place. The Lepcha people call it sak nam. In Nepal, the species is called bhalu biralo (bear-cat) and habre.
+    </p>
+    <p>
+  The red panda was recognized as the state animal of Sikkim in the early 1990s, and was the mascot of the Darjeeling Tea Festival.
+    </p>
+  </details>
+</section>
+
+<section>
+    <h2>Ejemplo de la etiqueta picture (aun no soportada)</h2>
+    <picture>
+    <source media="(max-width: 20em)" srcset="
+        images/small/low-res.jpg 1x,
+        images/small/high-res.jpg 2x, 
+        images/small/ultra-high-res.jpg 3x
+    ">
+    <source media="(max-width: 40em)" srcset="
+        images/large/low-res.jpg 1x,
+        images/large/high-res.jpg 2x, 
+        images/large/ultra-high-res.jpg 3x
+    ">
+    <img src="images/large/low-res.jpg">
+    </picture>
+</section>
+
+<section>
+    <h2>Ejemplo del formato de imágenes</h2>
+    <figure class="panda">
+        <img src="images/panda_hr.webp" alt="Oso panda">    
+    </figure>
+</section>
+
+
+<section>
+
+    <h2>Week, month and datetime-local inputs</h2>
+    <p>Select a value to see how it appears in JavaScript.</p>
+    <div>
+        <label>Week</label>
+        <input type="week" onchange="showValue('week', event.target.value)">
+        <span id="week"></span>
+    </div>
+
+    <div>
+        <label>Month</label>
+        <input type="month" onchange="showValue('month', event.target.value)"> 
+        <span id="month"></span>
+    </div>
+
+    <div>
+        <label>Datetime local</label>
+        <input type="datetime-local" onchange="showValue('datetime-local', event.target.value)">
+        <span id="datetime-local"></span>
+    </div>
+</section>
+
+</body>
+</html>

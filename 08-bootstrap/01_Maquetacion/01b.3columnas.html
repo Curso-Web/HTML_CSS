@@ -1,0 +1,66 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Bootstrap 3</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="main.css" rel="stylesheet">
+    <style>
+        article { /*Añade altura, simulando el contenido del artículo*/
+            height: 200px;
+            overflow: auto;
+        }
+            .separate-rows { /*Añade margen encima & debajo */
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+            .show-grid [class^="col-"] { /*Añade padding encima & debajo y borde+color */
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: 1px solid #AAA;
+                background-color: #EEE;
+                background-color: rgba(200, 200, 200, 0.3);
+            }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container-fluid">
+        <div class="row show-grid">
+            <header class="col-xs-12">
+                <h1>Ejemplo del uso de "container-fluid"</h1>
+                <p>Cabecera: col-xs-12</p>
+            </header>
+        </div>
+        <div class="row show-grid separate-rows">
+            <article class="col-sm-4 col-md-3">Artículo 1 sm-4 / md-3</article>
+            <article class="col-sm-4 col-md-6">Artículo 2 sm-4 / md-6</article>
+            <article class="col-sm-4 col-md-3">Artículo 3 sm-4 / md-3</article>
+        </div>
+        <div class="row show-grid separate-rows">
+            <footer class="col-xs-12">Footer col-xs-12</footer>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row show-grid">
+            <header class="col-xs-12">
+                <h1>Ejemplo del uso de "container"</h1>
+                <p>Cabecera: col-xs-12</p>
+            </header>
+        </div>
+        <div class="row show-grid separate-rows">
+            <article class="col-sm-4 col-md-3">Artículo 1 sm-4 / md-3</article>
+            <article class="col-sm-4 col-md-6">Artículo 2 sm-4 / md-6</article>
+            <article class="col-sm-4 col-md-3">Artículo 3 sm-4 / md-3</article>
+        </div>
+        <div class="row show-grid separate-rows">
+            <footer class="col-xs-12">Footer col-xs-12</footer>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro">
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grupos de botones</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+        
+    <div class="container"> 
+
+    	<div class="row">
+    		<header class="col-xs-12 well">
+    			<h1>Grupos de botones</h1>
+    			<p>Botoneras y barras de herramientas</p>
+    		</header>
+    	</div>
+
+
+        <div class="row">
+			<div class="col-xs-6">
+
+				<h3>Botones sueltos</h3>
+				<div>
+				  <a class="btn btn-info btn-sm" href="#">Primera</a>
+				  <a class="btn btn-info btn-sm" href="#">Segunda</a>
+				  <a class="btn btn-info btn-sm" href="#">Tercera</a>
+				</div>
+
+			<!-- 
+			Al crear un grupo de botones
+			- cambia su estética, fusionandose en una barra de botones
+			- se pueden aplicar tamaños o justificaciones a toda la barra
+				
+			-->
+
+				<h3>Grupos de botones</h3>
+				<div class="btn-group btn-group-sm">
+				  <a class="btn btn-info" href="#">Primera</a>
+				  <a class="btn btn-info" href="#">Segunda</a>
+				  <a class="btn btn-info" href="#">Tercera</a>
+				</div>
+
+			<!-- 
+			La justificacion es más simples si los elementos empleados son <a>
+
+			En el caso de los <button>, cada uno de ellos debe englobarse en un div de la clase btn-group
+			Así lo indica la ayuda de boostrap http://getbootstrap.com/components/#btn-groups-justified			
+			-->
+
+
+				<h3>Grupos de botones justificado</h3>
+				<div class="btn-group btn-group-sm btn-group-justified">
+				  <a class="btn btn-info" href="#">Primera</a>
+				  <a class="btn btn-info" href="#">Segunda</a>
+				  <a class="btn btn-info" href="#">Tercera</a>
+				</div>
+
+			<!-- 
+			Cualquiera de los botones incluidos puede ser desplegable,
+			incluyendo la corresppondiente estructura, 
+			dentro de su propio contenedor btn-group.
+			Si al contenedor se le añade la clase dropup, se despegará hacia arriba		
+			-->
+
+
+				<h3>Grupos de botones con alguno desplegable</h3>
+				<div class="btn-group btn-group-sm ">
+				  	<a class="btn btn-info" href="#">Primera</a>				  
+				  	<div class="btn-group btn-group-sm dropup">
+						<a class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+			           		Segunda <span class="caret"></span>
+			          	</a>
+			          	<ul class="dropdown-menu">
+				            <li class=""><a href="#">Opción 1</a></li>
+				            <li class=""><a href="#">Opción 2</a></li>
+				            <li class=""><a href="#">Opción 3</a></li>
+				            <li class=""><a href="#">Opción 4</a></li>
+			          	</ul>
+				  	</div>			  
+				  	<a class="btn btn-info" href="#">Tercera</a>
+				</div>
+
+			<!-- 
+			Para que todo el grupo sea vertical
+			basta pasar de la clase btn-group a btn-group-vertical
+ 			-->
+
+
+				<h3>Grupos vertical de botones</h3>
+				<div class="btn-group-vertical btn-group-sm">
+				  	<a class="btn btn-info" href="#">Primera</a>
+				  	<div class="btn-group btn-group-sm">				  
+				  		<a class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+		           			Segunda <span class="caret"></span>
+		          		</a>
+		          		<ul class="dropdown-menu">
+				            <li class=""><a href="#">Opción 1</a></li>
+				            <li class=""><a href="#">Opción 2</a></li>
+				            <li class=""><a href="#">Opción 3</a></li>
+				            <li class=""><a href="#">Opción 4</a></li>
+			          	</ul>
+		          	</div>
+				  	<a class="btn btn-info" href="#">Tercera</a>
+				</div>
+
+
+			</div>
+
+			
+
+			
+			<div class="col-xs-6">
+				<h3>Barras de herramientas</h3>
+				<div class="btn-toolbar" role="toolbar">
+					<div class="btn-group btn-group-xs">
+						<button type="button" class="btn btn-default">A</button>
+						<button type="button" class="btn btn-default">B</button>
+						<button type="button" class="btn btn-default">C</button>
+						<button type="button" class="btn btn-default">D</button>
+						<button type="button" class="btn btn-default">E</button>
+					</div>
+					<div class="btn-group btn-group-xs">
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-ban-circle"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-remove-circle"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-ok-circle"></span></button>
+					</div>
+					<div class="btn-group btn-group-xs">
+						<button type="button" class="btn btn-default">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+      </div>   <!-- Fin del container -->
+
+		<div class="container">
+        	<footer class="row">
+		        <address class="col-sm-12 text-center">
+		          <p>Aleajndro L. Cerezo</p>
+		          <p>Cle Formacion</p>
+		          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+		        </address>
+      		</footer>       
+		</div> <!-- Fin del container -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+   
+  </body>
+</html>

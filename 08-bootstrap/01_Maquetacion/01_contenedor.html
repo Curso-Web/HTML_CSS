@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introducción al sistema de rejilla</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fav_icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/default.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header>
+          <h1>Introducción al sistema de rejilla</h1>    
+        </header>        
+      </div>
+    </div>  
+    
+    <div class="container conborde">
+      <p>El <strong>"container"</strong> [bordeado] tiene un ancho fijo para cada mediaquery, 1170px en el más grande de ellos.<br>
+      En consecuencia sus márgenes laterales son auto.<br>
+      Tiene un padding a cada lado de 15px.<br> 
+      Esto permitiría crear contenido directamente en el contenedor: <br>
+      es el equivalente a definir un columna de ancha 12,<br>
+      aunque esto no es una buena práctica segun bootstrap<br>
+      </p>
+
+        <div class="row conborde">
+          <p>En el "container" se situan las <strong>filas</strong> (row) [bordeada] que sean necesarias, con un ancho del 100%.<br>
+             Tiene un padding a cada lado de - 15px, que contraresta el del contenetor<br>
+             Es un contenedor de columnas, que nunca debe de inclir directamente otro contenido
+          </p>   
+          
+          <div class="col-xs-6 conborde">
+            <p>En cada fila se definen las <strong>columnas</strong> [bordeadas] que sean necesarias,<br>
+            En este caso 2, de 6 columnas cada una.<br>
+            Tiene un padding a cada lado de 15px, que contraresta el del contenetor</p>
+          </div>
+
+          <div class="col-xs-6 conborde">
+            <p>Esta sería la segunda de las columnas.</p>
+          </div>
+        
+        </div>        
+    </div>
+    
+
+    <div class="container">
+        <div class="row">
+          <p class="col-xs-12">Creamos un nuevo contenedor, separado del anterior</p>
+          <p class="col-xs-6 estrecha conborde">
+             El modelo <strong>"box-sizing"</strong> usado por boostrap es border-model.<br>
+             Por tanto padding de las columnas puede modificarse sin afectar al total del espacio.<br>
+             En este caso, la primera de las 2 columnas de 6 tiene a cada lado un padding de 3em
+          </p>
+        <p class="col-xs-6 muyestrecha conborde">
+          La segunda de las columnas tiene un padding de 6 em.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+      <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+      </footer>       
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

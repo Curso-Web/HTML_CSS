@@ -1,0 +1,131 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Navegacion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="game.css">
+
+    <style>
+        body {margin:2em 4em;}
+        header.cabecera {margin-bottom: 0px;}
+       
+    </style>
+</head>
+<body class="container">
+
+    <header class="row jumbotron cabecera">
+        <h1>Navegación en Bootstrap</h1>
+    </header>
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <h2>Ejemplo de Barra de Menu 1</h2>
+            <p>Aplicando clases en el nav y en la lista (ul)</p>        
+        </div>
+
+        <nav class="navbar navbar-default col-sm-12">
+            <ul class="nav nav-pills">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Recursos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+
+        <div class="col-sm-12">
+            <h2>Ejemplo de Barra de Menu 2</h2>
+            <p>Añadiendo un desplegable en una de las opciones</p>
+        </div>
+
+        <nav class="navbar navbar-default col-sm-12">
+            <ul class="nav nav-pills">
+              <li><a href="#">Inicio</a></li>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Proyectos<span class="caret"></span></a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Juegos HTML</a></li>
+                    <li><a href="#">Elementos SVG</a></li>
+                    <li><a href="#">Apps Windows 8</a></li>
+                  </ul>
+              </li>
+
+              <li><a href="#">Recursos</a></li>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Contactar</a></li>
+            </ul>
+        </nav>
+
+        <div class="col-sm-12">
+            <h2>Ejemplo de Barra de Menu 3</h2>
+            <p>Añadiendo un desplegable y accesible en una de las opciones</p>
+        </div>
+
+        <nav class="navbar navbar-default col-sm-12">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>        
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Inicio</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Proyecto">
+                            Proyectos<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="Proyecto" role="menu">
+                            <li role="presentation"><a role="menuitem" href="#">Juegos HTML</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Elementos SVG</a></li>
+                            <li role="presentation"><a role="menuitem" href="#">Apps Windows 8</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Recursos</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contactar</a></li>
+                </ul>
+             </div>   
+        </nav>
+
+        
+    </div> <!-- Fin del div.row-->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit non, enim iste culpa dignissimos alias illum architecto repellendus, necessitatibus pariatur facilis voluptas ipsam laboriosam asperiores expedita recusandae possimus consequatur quas.</p>
+            <p>Tenetur aliquid cumque, ducimus labore itaque rerum ab qui ut. Accusantium odit deleniti quisquam sunt totam! At dolorum accusantium, soluta, a sit magnam nemo iusto sequi commodi ullam, numquam perferendis.</p>
+            <p>Cupiditate explicabo, nulla, doloribus tempore porro illo blanditiis qui amet, excepturi sed non consequuntur illum, veritatis! Non dignissimos aliquid earum ab id, vero, odit veritatis quidem rem voluptates repudiandae deleniti.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <footer class="col-sm-12 text-center">
+            <p>Microforum</p>
+            <figure class="col-xs-2 col-xs-offset-5">
+                <img class="img-responsive" src="images/Microforum.png" />
+            </figure>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>  

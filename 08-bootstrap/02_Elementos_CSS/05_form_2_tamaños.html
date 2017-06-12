@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fav_icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+        
+    <div class="container">
+      <div class="row">
+        <header class="col-xs-12 well">
+          <h1>Formularios con tamaños</h1>
+          <p>en Bootstrap</p>
+        </header>        
+      </div>
+
+        <form role="form" action="">
+          <fieldset>
+          <div class="row">          
+            <div class="col-xs-12">
+              <legend>Campos con dimensiones</legend>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+              <div class="form-group">
+                <label for="primero" class="control-label">Primero</label>
+                <input id="primero" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5">
+              <div class="form-group">
+                <label for="segundo" class="control-label">Segundo</label>
+                <input id="segundo" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+              <div class="form-group">
+                <label for="tercero" class="control-label">Tercero</label>
+                <input id="tercero" type="text" class="form-control">
+              </div>
+            </div>       
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="form-group">
+                <label for="alto" class="control-label">Alto</label>
+                <input id="alto" type="text" class="form-control input-lg">
+              </div>
+            </div> 
+            <div class="col-xs-4">
+              <div class="form-group">
+                <label for="pordefecto" class="control-label">Por defecto</label>
+                <input id="pordefecto" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="form-group">
+                <label for="pequenio" class="control-label">Pequeño</label>
+                <input id="pequenio" type="text" class="form-control input-sm">
+              </div>
+            </div>       
+          </div>
+
+          </fieldset>
+
+          <fieldset>
+          <div class="row">          
+            <div class="col-xs-12">
+              <legend>Más datos</legend>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="item-a" value="a"> Opción A
+                  </label>              
+                </div>   
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="item-b" value="b"> Opción B
+                  </label>              
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="item-c" value="c"> Opción C
+                  </label>
+                </div>              
+              </div>
+              <div class="col-xs-4">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="opcionNumero" id="opcionPrimera" value="1" checked>
+                    Opción primera
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="opcionNumero" id="opcionSegunda" value="2">
+                    Opción segunda
+                  </label>
+                </div>
+              </div>
+              <div class="form-group col-xs-4">
+                <label for="color">Color</label>
+                <select id="color" name="color" class="form-control">
+                  <option>Rojo</option>
+                  <option>Amarillo</option>
+                  <option>Azul</option>
+                  <option>Verde</option>
+                  <option>Violeta</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>              
+        </form> 
+      </div>    
+
+    <div class="container">
+      <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+      </footer>       
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

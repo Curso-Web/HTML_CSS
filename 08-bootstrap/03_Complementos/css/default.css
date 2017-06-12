@@ -1,0 +1,22 @@
+body {
+	padding: 20px 0;
+}
+
+header {
+        margin-top: 1em;
+		color: maroon;
+}
+
+	header p { /*Lineas de subtítulo*/
+		margin-top: -0.5em;
+		font-size: 1.5em;
+	}
+
+footer {
+ 	margin-top:  2em;
+ 	border-top: solid 1px silver;
+ 	color: maroon;
+}
+ 	footer p {
+ 		margin: 0.2em;
+ 	}

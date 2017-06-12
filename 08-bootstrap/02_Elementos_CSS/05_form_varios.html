@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+    <meta name="keywords" content="web, learning, html5, css3 bootstrap">
+    <meta name="author" content="Alejandro" >
+    <meta name="description" content="Ejercicios de HTML5">
+    <meta name="generator" content="Sublime Text">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formularios</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="fav_icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        section header, section form {
+            margin: 3em auto;
+        }
+    </style>
+</head>
+<body class="container">
+    <header class="well">
+        <h1>Formularios en Bootstrap</h1>
+    </header>
+
+    <section class="row">
+        <header class="col-md-10 col-md-offset-1">
+            <h2>Ejemplo de Formulario 1</h2>
+            <p>Formulario "vertical"</p>
+        </header>
+
+        <form class="col-md-10 col-md-offset-1">
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="inputPassword">Contraseña</label>
+                <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Contraseña">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Recuerdame</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="reset" class="btn btn-primary">Borrar</button>
+        </form>
+
+        <header class="col-md-10 col-md-offset-1">
+            <h2>Ejemplo de Formulario 2</h2>
+            <p>Formulario "horizontal" / en linea </p>
+        </header>
+
+        <form class="col-md-10 col-md-offset-1 form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="inputEmail">Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="inputPassword">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Recuerdame</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Acceder</button>
+        </form>
+
+        <header class="col-md-10 col-md-offset-1">
+            <h2>Ejemplo de Formulario 3</h2>
+            <p>Formulario "parcialmente horizontal" / etiquetas en linea</p>
+        </header>
+
+        <form class="form-horizontal col-md-10 col-md-offset-1">
+            <div class="form-group">
+                <label for="inputName" class="control-label col-xs-2">Nombre:</label>
+                <div class="col-xs-10">
+                    <input type="name" class="form-control" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="control-label col-xs-2">Email:</label>
+                <div class="col-xs-10">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="control-label col-xs-2">Asunto:</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" placeholder="Asunto">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    <div class="container">
+      <footer class="row">
+        <address class="col-sm-12 text-center">
+          <p>Aleajndro L. Cerezo</p>
+          <p>Cle Formacion</p>
+          <p><a class="email" href="mailto:alcerezo@movistar.es">alcerezo@movistar.es</a></p>
+        </address>
+      </footer>       
+    </div> <!-- Fin del container-->   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>  
